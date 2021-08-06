@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+
+{% block content %}<br>
+<div class="card">
+    <div class="card-header">
+        <h4 class="card-title">{{board.title}}</h4>
+        <small>{{board.writer}}<br>{{board.pub_date}}</small>
+    </div>
+    {% if board.image %}
+    <img src="{{board.image.url}}" alt="" width="500" height="500">
+    {% endif %}
+    <div class="card-body">
+      <p class="card-text">{{board.body}}</p>
+    </div>
+  </div><br>
+
+    <button type="submit" class="btn btn-secondary" onclick="location.href='{% url 'edit' board.id%}'">수정하기</button>
+    <button type="submit" class="btn btn-secondary" onclick="location.href='{% url 'delete' board.id%}'">삭제하기</button>
+    <hr>
+    <strong>댓글</strong><hr>
+    {% for comment in board.comments.all %} 
+      <div class="comment"> 
+        <strong>{{ comment.author_name }}</strong>
+        <div class="date">{{ comment.created_at }}</div>  
+        <p>{{ comment.comment_text|linebreaks }}</p> 
+      </div> 
+    {% empty %} 
+      <p>아직 댓글이 달리지 않았습니다.</p> 
+    {% endfor %}
+
+    <hr>
+    <a class="btn btn-success" href="{% url 'comment' board.id%}">댓글쓰기</a>
+
+{% endblock %}
