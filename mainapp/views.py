@@ -25,7 +25,7 @@ def home(request):
 
             if check_password(password, member.password):
                 request.session['user'] = member.id
-                return redirect('/')
+                return render(request, "first.html")
 
             else:
                 res_data['error'] = '비밀번호가 일치하지 않습니다.'

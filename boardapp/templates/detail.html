@@ -1,13 +1,16 @@
 {% extends 'base.html' %}
 
 {% block content %}<br>
+
+{{board.update_counter}}
+
 <div class="card">
     <div class="card-header">
         <h4 class="card-title">{{board.title}}</h4>
         <small>{{board.writer}}<br>{{board.pub_date}}</small>
     </div>
     {% if board.image %}
-    <img src="{{board.image.url}}" alt="" width="500" height="500">
+    <img src="{{board.image.url}}" alt="" width="300" height="300">
     {% endif %}
     <div class="card-body">
       <p class="card-text">{{board.body}}</p>

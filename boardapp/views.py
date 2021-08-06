@@ -7,7 +7,7 @@ from django.core.paginator import Paginator
 # 홈(게시판 홈)
 def board(request):
     boards = Board.objects.all().order_by('-id')
-    paginator = Paginator(boards, 3)
+    paginator = Paginator(boards, 5)
     page = request.GET.get('page')
     boards = paginator.get_page(page)
     return render(request, 'board.html', {'boards':boards})

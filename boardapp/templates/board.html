@@ -11,7 +11,7 @@
         <th scope="col">작성자</th>
         <th scope="col">작성일</th>
         <th scope="col">조회</th>
-        <th scope="col">스크랩</th>
+        {% comment %} <th scope="col">스크랩</th> {% endcomment %}
       </tr>
     </thead>
     <tbody>
@@ -22,8 +22,8 @@
         <td>{{board.title}}</td>
         <td>{{board.writer}}</td>
         <td>{{board.pub_date}}</td>
-        <td>조회</th>
-        <td>스크랩</td>
+        <td>{{board.board_hit}}</th>
+        {% comment %} <td>스크랩</td> {% endcomment %}
       </tr>
       {% endfor %}
     </tbody>

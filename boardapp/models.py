@@ -8,13 +8,21 @@ class Board(models.Model):
     pub_date = models.DateTimeField()
     body = models.TextField()
     image = models.ImageField(upload_to = "board/", blank=True, null=True)
-    #오류나면 "board/"이부분 수정해보기 ->boardapp/으로??
+    #->오류나면 "board/"이부분 수정해보기 ->boardapp/으로??
+    board_hit = models.PositiveIntegerField(default=0)
+    #->조회수 기능
 
     def __str__(self):
         return self.title #제목으로 보이게
     
     def summary(self):
         return self.body[:100]
+
+    #조회수 counter (문제: f5누르면 쭈~욱 올라감)
+    @property
+    def update_counter(self):
+        self.board_hit = self.board_hit + 1
+        self.save()
 
 #댓글 관련 모델
 class Comment(models.Model):
