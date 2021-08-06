@@ -1,13 +1,16 @@
 {% extends 'base.html' %}
+{% block content %}
 
-{% block content %}<br>
-
-{{board.update_counter}}
-
+{% comment %} 조회수 카운팅 - 'none'이라고 떠서 안보이게 숨겨둠{% endcomment %}
+<div class= "class" name="name" id="id" style="display:none">
+{{board.update_counter}}</div> 
+<br><h2>게시판</h2><hr>
 <div class="card">
     <div class="card-header">
         <h4 class="card-title">{{board.title}}</h4>
-        <small>{{board.writer}}<br>{{board.pub_date}}</small>
+        <br><b>{{board.category}}</b>
+        <small><br>{{board.writer}}<br>{{board.pub_date}} 
+        <br>조회수 {{board.board_hit}}</small>
     </div>
     {% if board.image %}
     <img src="{{board.image.url}}" alt="" width="300" height="300">

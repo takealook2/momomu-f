@@ -1,7 +1,7 @@
 {% extends 'base.html' %}
 
 {% block content %}
-    <h1>수정하기</h1>
+    <br><h2>수정하기</h2><hr>
     <form action="{%url 'update' board.id%}" method="post">
         {%csrf_token%}
         {{form.media}}

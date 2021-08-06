@@ -1,8 +1,15 @@
 from django.db import models
 from django.utils import timezone
 
-# Create your models here.
+#카테고리 select 필드
+category_select = (
+    ('공지', '공지'),
+    ('잡담', '잡담'),
+    ('후기', '후기')
+)
+
 class Board(models.Model):
+    category = models.CharField(max_length=20, choices=category_select, default='잡담')
     title = models.CharField(max_length=200)
     writer = models.CharField(max_length=100)
     pub_date = models.DateTimeField()

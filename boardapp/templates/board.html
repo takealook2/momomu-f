@@ -1,7 +1,16 @@
 {% extends 'base.html' %}
 
 {% block content %}
-<h2>게시판</h2><br>
+<br><h2>게시판</h2><hr>
+<div>
+    <button type="button" class="btn btn-secondary" onclick="location.href='{%url 'board'%}'">전체</button>
+    <button type="button" class="btn btn-secondary" onclick="location.href='{%url 'talk'%}'">잡담</button>
+    <button type="button" class="btn btn-secondary" onclick="location.href='{%url 'review'%}'">후기</button>
+    <button type="button" class="btn btn-secondary" onclick="location.href='{%url 'notice'%}'">공지</button>
+
+</div>
+
+<br>
 <table class="table table-hover">
     <thead>
       <tr>
@@ -18,10 +27,11 @@
         {% for board in boards%}
       <tr onclick="location.href='/board/{{board.id}}'">
         <th scope="row">{{board.id}}</th>
-        <td>카테고리</td>
+        <td>{{board.category}}</td>
         <td>{{board.title}}</td>
         <td>{{board.writer}}</td>
-        <td>{{board.pub_date}}</td>
+        <td>{{board.pub_date|date:"Y.m.d H:i"}}</td>
+        {% comment %} <td>{{board.pub_date|date:"Y.m.d H:i"}}</td> {% endcomment %}
         <td>{{board.board_hit}}</th>
         {% comment %} <td>스크랩</td> {% endcomment %}
       </tr>
@@ -39,10 +49,19 @@
   <a href="?page={{boards.next_page_number}}">다음</a>
   <a href="?page={{boards.paginator.num_pages}}">마지막</a>
   {% endif %}
-
+ 
     <div>
         <!-- <a href="{%url 'new'%}" >새글쓰기</a> -->
         <!-- <button type="button" onclick="location.href='{%url 'new'%}'">새글쓰기</button> -->
         <button type="button" class="btn btn-secondary" onclick="location.href='{%url 'new'%}'">새글쓰기</button>
+        <button type="button" class="btn btn-secondary" onclick="location.href='{%url 'search'%}'">검색</button>
+        <!--검색 기능 - 제대로 구현 못함-->
     </div>
+
+
+<br/><br/>
+
+
+
+
 {% endblock %}

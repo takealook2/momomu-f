@@ -4,6 +4,12 @@ from django.utils import timezone
 from .forms import BoardForm, CommentForm
 from django.core.paginator import Paginator
 
+#검색에 필요한 패키지 임포트
+from django.views.generic.edit import FormView
+from boardapp.forms import BoardSearchForm
+from django.db.models import Q
+from django.shortcuts import render 
+
 # 홈(게시판 홈)
 def board(request):
     boards = Board.objects.all().order_by('-id')
@@ -67,3 +73,42 @@ def comment(request, id):
     return render(request, "comment.html", {'form':form})
 
 
+#카테고리(잡담)
+def category_talk(request):
+    boards = Board.objects.all().filter(category='잡담').order_by('-id')
+    paginator = Paginator(boards, 5)
+    page = request.GET.get('page')
+    boards = paginator.get_page(page)
+    return render(request, 'board.html', {'boards':boards})
+
+#카테고리(후기)
+def category_review(request):
+    boards = Board.objects.all().filter(category='후기').order_by('-id')
+    paginator = Paginator(boards, 5)
+    page = request.GET.get('page')
+    boards = paginator.get_page(page)
+    return render(request, 'board.html', {'boards':boards})
+
+#카테고리(공지)
+def category_notice(request):
+    boards = Board.objects.all().filter(category='공지').order_by('-id')
+    paginator = Paginator(boards, 5)
+    page = request.GET.get('page')
+    boards = paginator.get_page(page)
+    return render(request, 'board.html', {'boards':boards})
+
+# 검색
+class SearchFormView(FormView):
+    form_class = BoardSearchForm
+    template_name = 'search.html'
+
+    def form_valid(self, form):
+        searchWord = form.cleaned_data['search_word']
+        post_list = Board.objects.filter(Q(title__icontains=searchWord) | Q(body__icontains=searchWord)).distinct()
+
+        context = {}
+        context['form'] = form
+        context['search_term'] = searchWord
+        context['object_list'] = post_list
+
+        return render(self.request, self.template_name, context)
