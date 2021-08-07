@@ -1,8 +1,10 @@
+from django.contrib.auth.models import User
 from django.shortcuts import redirect, render, get_object_or_404
 from .models import Board, Comment
 from django.utils import timezone
 from .forms import BoardForm, CommentForm
 from django.core.paginator import Paginator
+from django.contrib import messages
 
 #검색에 필요한 패키지 임포트
 from django.views.generic.edit import FormView
@@ -28,6 +30,19 @@ def new(request):
     form = BoardForm()
     return render(request, 'new.html', {'form':form})
 
+# def new(request):
+#     if request.user.is_authenticated: 
+#         #로그인 한 상태라면 new포스트 html로 보내기.
+#         return render(request, 'new.html')
+#     else:
+#         #회원정보가 존재하지 않는다면, 에러인자와 함께 home 템플릿으로 돌아가기.     
+#         boards = Board.objects.all().order_by('-id')
+#         paginator = Paginator(boards, 5)
+#         page = request.GET.get('page')
+#         boards = paginator.get_page(page)
+#         return render(request, 'board.html', {'boards': boards, 'error': 'You have to login to make newpost'})
+    
+
 # 새글을 데이터베이스에 저장
 def create(request):
     form = BoardForm(request.POST, request.FILES)
@@ -42,6 +57,7 @@ def create(request):
 def edit(request, id):
     edit_board = Board.objects.get(id=id)
     return render(request, 'edit.html', {'board':edit_board})
+
 
 # 수정 내용을 데이터베이스에 저장
 def update(request, id):

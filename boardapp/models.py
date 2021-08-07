@@ -1,5 +1,6 @@
 from django.db import models
 from django.utils import timezone
+from django.contrib.auth.models import User
 
 #카테고리 select 필드
 category_select = (
@@ -10,8 +11,8 @@ category_select = (
 
 class Board(models.Model):
     category = models.CharField(max_length=20, choices=category_select, default='잡담')
-    title = models.CharField(max_length=200)
-    writer = models.CharField(max_length=100)
+    title = models.CharField(max_length=50)
+    writer = models.CharField(max_length=50)
     pub_date = models.DateTimeField()
     body = models.TextField()
     image = models.ImageField(upload_to = "board/", blank=True, null=True)
@@ -23,7 +24,7 @@ class Board(models.Model):
         return self.title #제목으로 보이게
     
     def summary(self):
-        return self.body[:100]
+        return self.body[:50]
 
     #조회수 counter (문제: f5누르면 쭈~욱 올라감)
     @property

@@ -1,7 +1,7 @@
 {% extends 'base.html' %}
 
 {% block content %}
-<br><h2>게시판</h2><hr>
+<br><h2>게시판📋</h2><hr>
 <div>
     <button type="button" class="btn btn-secondary" onclick="location.href='{%url 'board'%}'">전체</button>
     <button type="button" class="btn btn-secondary" onclick="location.href='{%url 'talk'%}'">잡담</button>
@@ -53,6 +53,10 @@
     <div>
         <!-- <a href="{%url 'new'%}" >새글쓰기</a> -->
         <!-- <button type="button" onclick="location.href='{%url 'new'%}'">새글쓰기</button> -->
+        
+        {% comment %} {% if error %}
+        <p style="color:red;">{{error}}</p>
+        {%endif%} {% endcomment %}
         <button type="button" class="btn btn-secondary" onclick="location.href='{%url 'new'%}'">새글쓰기</button>
         <button type="button" class="btn btn-secondary" onclick="location.href='{%url 'search'%}'">검색</button>
         <!--검색 기능 - 제대로 구현 못함-->

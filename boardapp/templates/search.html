@@ -2,7 +2,7 @@
 {% block content %}
 
 <div id='content'>
-    <br><h2>게시판 검색</h2><hr>
+    <br><h2>게시판 검색🔍</h2><hr>
     <form action="." method="post">{% csrf_token %}
         {{form.as_table}}
         {% comment %} <input type="submit" value="검색"/> {% endcomment %}

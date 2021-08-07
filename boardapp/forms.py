@@ -10,7 +10,7 @@ class BoardForm(forms.ModelForm):
         labels = {
             'category' : '카테고리', 
             'title' : '제목', 
-            'writer' : '작성자', 
+            'writer' : '작성자',
             'image' : '이미지', 
             'body' : ''
             }
