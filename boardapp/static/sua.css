@@ -345,7 +345,7 @@ input
     transform: matrix(1,0,0,1,0,0);
 }
 /* 이 부분이 문제인 것 같습니다 (내가쓴글) */
-.mypage_inner
+/* .mypage_inner
 {   
     position: absolute;
     top: 1300px;
@@ -365,7 +365,8 @@ input
     top: 1400px;
     left: 300px;
     z-index: 10;
-}
+} */
+
 /* textarea
 {
     position: absolute;
@@ -374,6 +375,7 @@ input
     font-size: 17px;
     font-family: 'MaruBuri-Regular';
 } */
+
 #toc-toggle {
     transform: matrix(1,0,0,1,242.8255,1155.1745) rotate(90deg);
     transform-origin: center;
