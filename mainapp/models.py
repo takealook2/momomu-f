@@ -14,6 +14,9 @@ class BoardMember(models.Model):
     def __str__(self):
         return self.email
 
+    def __str__(self):
+        return self.nickname
+
     class Meta:
         db_table            = 'boardmembers'
         verbose_name        = '게시판멤버'

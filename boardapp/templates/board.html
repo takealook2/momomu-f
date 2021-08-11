@@ -1,16 +1,745 @@
-{% extends 'base.html' %}
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MOMOMU</title>
+    <link rel="stylesheet" href="/static/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
-{% block content %}
-<br><h2>게시판📋</h2><hr>
-<div>
+    {% comment %} <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script> {% endcomment %}
+
+  <style>   /* 공통 nav 바 */
+	@font-face {
+    font-family: 'HSBombaram3_Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10@1.1/HSBombaram3_Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+	}
+
+	@font-face {
+    font-family: 'MaruBuri-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10-21@1.0/MaruBuri-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+	}	
+
+
+#mainlogo {
+    filter: drop-shadow(0px 5px 9px rgba(0, 0, 0, 0.71));
+    left: 140px;
+    top: 3px;
+    position: relative;
+    overflow: visible;
+    width: 107px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: 'HSBombaram3_Regular';
+    text-decoration:none;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    color: rgba(255,255,255,1);
+    z-index: 1;
+}
+
+
+#logo {
+    background-color: rgba(52,62,120,1);
+    z-index: 1;
+	width:1920px
+}
+.mainnamebackground {
+    position: absolute;
+    overflow: visible;
+    width: 1920px;
+    height: 60px;
+    left: 0px;
+    top: 0px;
+    z-index: 1;
+}
+
+
+#navbackground {
+    fill: rgba(165,171,203,1);
+    z-index: 1;
+	}
+.navbackground {
+    position: absolute;
+    overflow: visible;
+    width: 1920px;
+    height: 60px;
+    left: 0px;
+    top: 60px;
+    z-index: 1;
+}
+
+#nav1 {
+    left: 140px;
+    top: 7px;
+    position: absolute;
+    overflow: visible;
+    width: 117px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: 'HSBombaram3_Regular';
+    text-decoration:none;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    color: rgba(18,18,18,1);
+    z-index: 1;
+}
+
+#nav2 {
+    left: 334px;
+    top: 7px;
+    position: absolute;
+    overflow: visible;
+    width: 91px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: 'HSBombaram3_Regular';
+    text-decoration:none;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    color: rgba(18,18,18,1);
+    z-index: 1;
+}
+
+#nav3 {
+    left: 496px;
+    top: 7px;
+    position: absolute;
+    overflow: visible;
+    width: 91px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: 'HSBombaram3_Regular';
+    text-decoration:none;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    color: rgba(18,18,18,1);
+    z-index: 1;
+}
+#nav4 {
+    left: 662px;
+    top: 7px;
+    position: absolute;
+    overflow: visible;
+    width: 91px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: 'HSBombaram3_Regular';
+    text-decoration:none;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    color: rgba(18,18,18,1);
+    z-index: 1;
+}
+
+#nickname {
+    left: 1573px;
+    top: 79px;
+    position: absolute;
+    overflow: visible;
+    width: 61px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: 'MaruBuri-Regular';
+    text-decoration:none ;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    color: rgba(0,0,0,1);
+    z-index: 1;
+}
+#logout {
+    left: 1695px;
+    top: 81px;
+    position: absolute;
+    overflow: visible;
+    width: 61px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: 'MaruBuri-Regular';
+    text-decoration:none ;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    color: rgba(0,0,0,1);
+}
+
+#myimage {
+    fill: rgba(255,255,255,1);
+    z-index: 1;
+}
+.myimage {
+    position: absolute;
+    overflow: visible;
+    width: 34px;
+    height: 34px;
+    left: 1520px;
+    top: 74px;
+    z-index: 1;
+}
+
+/* 공통 nav 바 끝 */ 
+
+	.mediaViewInfo {
+		--web-view-name: 자유게시판 – 1;
+		--web-view-id: __1;
+		--web-scale-on-resize: true;
+		--web-enable-deep-linking: true;
+	}
+	:root {
+		--web-view-ids: __1;
+	}
+	* {
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+		border: none;
+	}
+	#__1 {
+		position: absolute;
+		width: 1920px;
+		height: 900px;
+		background: linear-gradient(180.1deg, rgba(0,24,65,1) 0%, rgba(21,60,100,1) 21.16%, rgba(68,90,157,1) 41.58%, rgba(75,151,186,1) 100%, rgba(57,0,113,1) 100%);
+		overflow: hidden;
+		--web-view-name: 자유게시판 – 1;
+		--web-view-id: __1;
+		--web-scale-on-resize: true;
+		--web-enable-deep-linking: true;
+	}
+	#_28 {
+		mix-blend-mode: multiply;
+		position: absolute;
+		width: 2077.999px;
+		height: 1788.001px;
+		left: -158px;
+		top: 114px;
+		overflow: visible;
+    z-index:6;
+	} 
+	#pngegg_4 {
+		mix-blend-mode: soft-light;
+		filter: blur(4px);
+		position: absolute;
+		width: 1920px;
+		height: 1427px;
+		left: 0px;
+		top: 712px;
+		overflow: visible;
+    z-index:6;
+	}
+	#_3 {
+		fill: rgba(52,62,120,1);
+	}
+	._3 {
+		position: absolute;
+		overflow: visible;
+		width: 1920px;
+		height: 60px;
+		left: 0px;
+		top: 0px;
+	}
+	#_4 {
+		fill: rgba(165,171,203,1);
+	}
+	._4 {
+		position: absolute;
+		overflow: visible;
+		width: 1920px;
+		height: 60px;
+		left: 0px;
+		top: 60px;
+	}
+	#_ {
+		left: 1695px;
+		top: 83px;
+		position: absolute;
+		overflow: visible;
+		width: 59px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: MARU Buri Beta;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 15px;
+		color: rgba(0,0,0,1);
+	}
+	#_1 {
+		fill: rgba(255,255,255,1);
+	}
+	._1 {
+		position: absolute;
+		overflow: visible;
+		width: 34px;
+		height: 34px;
+		left: 1520px;
+		top: 74px;
+	}
+	#__ {
+		filter: drop-shadow(0px 5px 9px rgba(0, 0, 0, 0.71));
+		left: 140px;
+		top: 13px;
+		position: absolute;
+		overflow: visible;
+		width: 102px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: HSBomBaram 3.0;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 30px;
+		color: rgba(255,255,255,1);
+	}
+	#_168 {
+		fill: rgba(32,67,99,1);
+	}
+	._168 {
+		position: absolute;
+		overflow: visible;
+		width: 1920px;
+		height: 95px;
+		left: 0px;
+		top: 2044px;
+	}
+	#_ba {
+		filter: drop-shadow(0px 5px 9px rgba(0, 0, 0, 0.71));
+		left: 315px;
+		top: 140px;
+		position: absolute;
+		overflow: visible;
+		width: 169px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: 'HSBombaram3_Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10@1.1/HSBombaram3_Regular.woff') format('woff');
+		font-style: normal;
+		font-weight: normal;
+		font-size: 35px;
+		color: rgba(255,255,255,1);
+	}
+	#_5 {
+		fill: transparent;
+		stroke: rgba(255,255,255,1);
+		stroke-width: 0.5px;
+		stroke-linejoin: miter;
+		stroke-linecap: round;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	._5 {
+		overflow: visible;
+		position: absolute;
+		width: 285.707px;
+		height: 285.707px;
+		left: 1374.5px;
+		top: 241.25px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#_1_ {
+		fill: transparent;
+		stroke: rgba(255,255,255,1);
+		stroke-width: 0.5px;
+		stroke-linejoin: miter;
+		stroke-linecap: round;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	._1_ {
+		overflow: visible;
+		position: absolute;
+		width: 285.707px;
+		height: 285.707px;
+		left: 461.5px;
+		top: 263.5px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#_7 {
+		fill: transparent;
+		stroke: rgba(255,255,255,1);
+		stroke-width: 0.5px;
+		stroke-linejoin: miter;
+		stroke-linecap: round;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	._7 {
+		overflow: visible;
+		position: absolute;
+		width: 285.707px;
+		height: 285.707px;
+		left: 1559.5px;
+		top: 653.5px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#_2 {
+		fill: transparent;
+		stroke: rgba(255,255,255,1);
+		stroke-width: 0.5px;
+		stroke-linejoin: miter;
+		stroke-linecap: round;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	._2 {
+		overflow: visible;
+		position: absolute;
+		width: 72.707px;
+		height: 72.707px;
+		left: 359px;
+		top: 581.5px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#_6 {
+		fill: transparent;
+		stroke: rgba(255,255,255,1);
+		stroke-width: 0.5px;
+		stroke-linejoin: miter;
+		stroke-linecap: round;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	._6 {
+		overflow: visible;
+		position: absolute;
+		width: 107.207px;
+		height: 106.957px;
+		left: 1237.5px;
+		top: 559.25px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#_9 {
+		fill: transparent;
+		stroke: rgba(255,255,255,1);
+		stroke-width: 0.5px;
+		stroke-linejoin: miter;
+		stroke-linecap: round;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	._9 {
+		overflow: visible;
+		position: absolute;
+		width: 52.707px;
+		height: 52.707px;
+		left: 1160px;
+		top: 693px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#_8 {
+		fill: transparent;
+		stroke: rgba(255,255,255,1);
+		stroke-width: 0.5px;
+		stroke-linejoin: miter;
+		stroke-linecap: round;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	._8 {
+		overflow: visible;
+		position: absolute;
+		width: 72.707px;
+		height: 72.707px;
+		left: 1457px;
+		top: 971.5px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#_be {
+		left: 334px;
+		top: 80px;
+		position: absolute;
+		overflow: visible;
+		width: 83px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: HSBomBaram 3.0;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 18px;
+		color: rgba(18,18,18,1);
+	}
+	#ABOUT_ {
+		left: 140px;
+		top: 80px;
+		position: absolute;
+		overflow: visible;
+		width: 115px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: HSBomBaram 3.0;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 18px;
+		color: rgba(18,18,18,1);
+	}
+	#_bg {
+		left: 496px;
+		top: 80px;
+		position: absolute;
+		overflow: visible;
+		width: 87px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: HSBomBaram 3.0;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 18px;
+		color: rgba(18,18,18,1);
+	}
+	#_bh {
+		left: 662px;
+		top: 80px;
+		position: absolute;
+		overflow: visible;
+		width: 83px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: HSBomBaram 3.0;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 18px;
+		color: rgba(18,18,18,1);
+	}
+	#_33 {
+		opacity: 0.49;
+		mix-blend-mode: lighten;
+		position: absolute;
+		width: 1920px;
+		height: 1617.001px;
+		left: 0px;
+		top: 130px;
+		overflow: visible;
+    z-index:6;
+	}
+	.container {
+    position: absolute;
+    width: 1920px;
+    height: 550px;
+    overflow: hidden;
+    z-index: 1;
+    max-width: 1920;
+    left: 300px;
+    top: 300px;
+}
+
+  .table {
+    --bs-table-bg: white;
+    --bs-table-accent-bg: transparent;
+    --bs-table-striped-color: #888;
+    --bs-table-striped-bg: rgba(0, 0, 0, 0.05);
+    --bs-table-active-color: #888;
+    --bs-table-active-bg: rgba(0, 0, 0, 0.1);
+    --bs-table-hover-color: whitesmoke;
+    --bs-table-hover-bg: #7165B5;
+    width: 100%;
+    margin-bottom: 1rem;
+    color: black;
+    vertical-align: top;
+    border-color: rgb(165,171,203);
+	text-align: center;
+	font-family: 'MaruBuri-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10-21@1.0/MaruBuri-Regular.woff') format('woff');
+    
+}
+.bbtn{
+  position: absolute;
+  left: 1060px;
+}
+
+.btn{
+  color:black;
+}
+.btn-secondary {
+    background-color: rgb(165,171,203);
+    border-color: rgb(165,171,203);
+
+}
+
+.btn:hover {
+    color: white;
+    background-color: rgb(125,122,191);
+    border-color: rgb(125,122,191);
+}
+.page-item.active .page-link {
+    z-index: 3;
+    color: #fff;
+    background-color: transparent;
+    border-color: transparent;
+}
+.page-link {
+    position: relative;
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    background-color: transparent;
+	border-color: transparent;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+.page-item.disabled .page-link {
+    color: #fff;
+    pointer-events: none;
+    background-color:transparent;
+    border-color:transparent;
+}
+
+
+.bg-light {
+    background-color: rgba(165,171,203,1);
+    z-index: 1;
+}
+
+#navlogin{
+	position: relative;
+	left: 1573px;
+    top: 1px;
+	font-family: 'MaruBuri-Regular';
+	color: rgba(0,0,0,1);
+}
+
+#nav5{
+	position: relative;
+	left: 1500px;
+    top: 1px;
+	 font-family: 'MaruBuri-Regular';
+	color: rgba(0,0,0,1);
+}
+
+#img444{
+	position: relative;
+	left: 1500px;
+    top: 1px;
+	
+}
+
+.navbar{
+	width:1920px
+}
+
+small{
+	color:gray;
+}
+</style>
+</head>
+
+<body>
+
+{%load static%}
+    
+
+<header>
+ <div id="logo">
+<a href="{%url 'first'%}" id="mainlogo">모모뮤</a>
+</div>
+</header>
+{%load static%}
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<div class="container-fluid">
+<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+<span class="navbar-toggler-icon"></span>
+ </button>
+<div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" id="nav1" href="{%url 'about'%}">ABOUT 뮤지컬</a>
+            </li>
+			
+			<li class="nav-item">
+              <a class="nav-link" id="nav2" href="{%url 'rank'%}">뮤지컬 정보</a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link"  id="nav3" href="{%url 'board'%}">게시판</a>
+            </li>
+            {% if request.session.user %}
+			<li class="nav-item">
+              <a class="nav-link" id="nav4" href="{%url 'mypage'%}">마이페이지</a>
+            </li>
+            
+            <img src="{% static 'mu.jpg'%}"  id="img444" alt="" width="40" height="40">
+            <a class="nav-link" id="nav5" href="#">
+            반갑습니다 <b>{{request.session.nickname}}</b> 님
+            </a>
+            {% endif %}
+            
+            <form class="form-inline my-2 my-lg-0">
+              {% if request.session.user %}
+              <button type="button" id="navlogin" class="btn btn-secondary my-2 my-sm-0" onclick="location.href='/main/logout/'">로그아웃</button>
+              {% else %}
+              <button type="button" id="navlogin" class="btn btn-secondary my-2 my-sm-0" onclick="location.href='/main'">로그인</button>
+              {% endif %}
+            </form>
+          </ul>
+        </div> 
+      </div> 
+  </nav> 
+  
+<div id="__1">
+	{% comment %} <img id="_28" src="/static/_28.png" > {% endcomment %}
+		
+	{% comment %} <img id="pngegg_4" src="/static/pngegg_4.png"> {% endcomment %}
+
+		
+	
+	<svg class="_168">
+		<rect id="_168" rx="0" ry="0" x="0" y="0" width="1920" height="95">
+		</rect>
+	</svg>
+	<div id="_ba">
+		<span>자유게시판</span>
+	</div>
+	<svg class="_5" viewBox="0 0 285 285">
+		<path id="_5" d="M 285 0 L 0 285">
+		</path>
+	</svg>
+	<svg class="_1_" viewBox="0 0 285 285">
+		<path id="_1_" d="M 285 0 L 0 285">
+		</path>
+	</svg>
+	<svg class="_7" viewBox="0 0 285 285">
+		<path id="_7" d="M 285 0 L 0 285">
+		</path>
+	</svg>
+	<svg class="_2" viewBox="0 0 72 72">
+		<path id="_2" d="M 72 0 L 0 72">
+		</path>
+	</svg>
+	<svg class="_6" viewBox="0 0 106.5 106.25">
+		<path id="_6" d="M 106.5 0 L 0 106.25">
+		</path>
+	</svg>
+	<svg class="_9" viewBox="0 0 52 52">
+		<path id="_9" d="M 52 0 L 0 52">
+		</path>
+	</svg>
+	<svg class="_8" viewBox="0 0 72 72">
+		<path id="_8" d="M 72 0 L 0 72">
+		</path>
+	</svg>
+	
+	{% comment %} <img id="_33" src="/static/_33.png"> {% endcomment %}
+		
+</div> 
+
+<div class="container">
+        {% block content %}
+<div class = "bbtn">
     <button type="button" class="btn btn-secondary" onclick="location.href='{%url 'board'%}'">전체</button>
     <button type="button" class="btn btn-secondary" onclick="location.href='{%url 'talk'%}'">잡담</button>
     <button type="button" class="btn btn-secondary" onclick="location.href='{%url 'review'%}'">후기</button>
     <button type="button" class="btn btn-secondary" onclick="location.href='{%url 'notice'%}'">공지</button>
 
 </div>
+<br><br>
 
-<br>
 <table class="table table-hover">
     <thead>
       <tr>
@@ -25,10 +754,23 @@
     </thead>
     <tbody>
         {% for board in boards%}
-      <tr onclick="location.href='/board/{{board.id}}'">
+      {% comment %} <tr onclick="location.href='/board/{{board.id}}'">
         <th scope="row">{{board.id}}</th>
         <td>{{board.category}}</td>
         <td>{{board.title}}</td>
+        <td>{{board.writer}}</td>
+        <td>{{board.pub_date|date:"Y.m.d H:i"}}</td>
+        <td>{{board.board_hit}}</th>
+      </tr> {% endcomment %}
+	  <tr onclick="location.href='/board/{{board.id}}'">
+        <th scope="row">{{board.id}}</th>
+        <td>{{board.category}}</td>
+        <td>{{board.title}} 
+          {% if board.comments.count > 0 %}
+          <small>
+          ({{board.comments.count}})</small>
+          {% endif %}
+        </td>
         <td>{{board.writer}}</td>
         <td>{{board.pub_date|date:"Y.m.d H:i"}}</td>
         {% comment %} <td>{{board.pub_date|date:"Y.m.d H:i"}}</td> {% endcomment %}
@@ -38,7 +780,7 @@
       {% endfor %}
     </tbody>
   </table>
-  {%if boards.has_previous%} 
+  {% comment %} {%if boards.has_previous%} 
   <a href="?page=1">처음</a>
   <a href="?page={{boards.previous_page_number}}">이전</a>
   {% endif %}
@@ -48,7 +790,45 @@
   {%if boards.has_next%} 
   <a href="?page={{boards.next_page_number}}">다음</a>
   <a href="?page={{boards.paginator.num_pages}}">마지막</a>
-  {% endif %}
+  {% endif %} {% endcomment %}<!-- 페이징처리 시작 -->
+    <div id="paging">
+        <ul class="pagination justify-content-center" style="margin-top: 2rem;">
+            <!-- 이전페이지 -->
+            {% if boards.has_previous %}
+            <li class="page-item">
+                <a class="page-link" href="?&page={{ boards.previous_page_number }}">◁</a>
+                <!-- href로 뎁스 설정 -->
+            </li>
+            {% else %}
+            <li class="page-item disabled">
+                <a class="page-link" tabindex="-1" aria-disabled="true" href="#">◁</a>
+            </li>
+            {% endif %}
+            <!-- 페이지리스트 -->
+            {% for page_number in boards.paginator.page_range %}
+            {% if page_number == boards.number %}
+            <li class="page-item active" aria-current="page">
+                <a class="page-link" href="?&page={{ page_number }}">{{ page_number }}</a>
+            </li>
+            {% else %}
+            <li class="page-item">
+                <a class="page-link" href="?&page={{ page_number }}">{{ page_number }}</a>
+            </li>
+            {% endif %}
+            {% endfor %}
+            <!-- 다음페이지 -->
+            {% if boards.has_next %}
+            <li class="page-item">
+                <a class="page-link" href="?&page={{ boards.next_page_number }}">▷</a>
+            </li>
+            {% else %}
+            <li class="page-item disabled">
+                <a class="page-link" tabindex="-1" aria-disabled="true" href="#">▷</a>
+            </li>
+            {% endif %}
+        </ul>
+    </div>
+    <!-- 페이징처리 끝 -->
  
     <div>
         <!-- <a href="{%url 'new'%}" >새글쓰기</a> -->
@@ -57,15 +837,23 @@
         {% comment %} {% if error %}
         <p style="color:red;">{{error}}</p>
         {%endif%} {% endcomment %}
+        {% comment %} <button type="button" class="btn btn-secondary" onclick="location.href='{%url 'new'%}'">새글쓰기</button>
+        <button type="button" class="btn btn-secondary" onclick="location.href='{%url 'search'%}'">검색</button>
+        <!--검색 기능 - 제대로 구현 못함--> {% endcomment %}
+		{% comment %} 새글쓰기 버튼 - 로그인한 경우에만 보이도록 구현함 {% endcomment %}
+        {% if request.session.user %}
         <button type="button" class="btn btn-secondary" onclick="location.href='{%url 'new'%}'">새글쓰기</button>
+        {% endif %}
         <button type="button" class="btn btn-secondary" onclick="location.href='{%url 'search'%}'">검색</button>
         <!--검색 기능 - 제대로 구현 못함-->
     </div>
 
 
 <br/><br/>
+        {% endblock %}
+    </div>
 
 
 
 
-{% endblock %}
+</body>

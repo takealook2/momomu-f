@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+<head>
+<meta charset="utf-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>어바웃뮤지 – 1</title>
+<link rel="stylesheet" href="{% static 'sj2.css' %}">
+<link rel="stylesheet" href="/static/bootstrap.min.css">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+</head>
+<style>
+.btn-secondary {
+    background-color: rgb(125,122,191);
+    border-color: rgb(125,122,191);
+    }
+
+.btn:hover {
+color: white;
+background-color: rgb(165,171,203);
+border-color: rgb(165,171,203);
+}
+</style>
+<body>
+{%load static%}
+<header>    
+	<div id="logo">
+		<a href="{%url 'first'%}" id="mainlogo">모모뮤</a>
+		</div>
+</header>
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+	<div class="container-fluid">
+	<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+	<span class="navbar-toggler-icon"></span>
+ 	</button>
+	<div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" id="nav1" href="{%url 'about'%}">ABOUT 뮤지컬</a>
+            </li>
+			
+			<li class="nav-item">
+              <a class="nav-link" id="nav2" href="{%url 'rank'%}">뮤지컬 정보</a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link"  id="nav3" href="{%url 'board'%}">게시판</a>
+            </li>
+            {% if request.session.user %}
+			<li class="nav-item">
+              <a class="nav-link" id="nav4" href="{%url 'board'%}">마이페이지</a>
+            </li>
+            
+            
+            
+            <img src="{% static 'mu.jpg'%}"  id="img444" alt="" width="40" height="40">
+            <a class="nav-link" id="nav5" href="#">
+            반갑습니다 <b>{{request.session.nickname}}</b> 님
+            </a>
+            {% endif %}
+            
+            <form class="form-inline my-2 my-lg-0">
+              {% if request.session.user %}
+              <button type="button" id="navlogin" class="btn btn-secondary my-2 my-sm-0" onclick="location.href='/main/logout/'">로그아웃</button>
+              {% else %}
+              <button type="button" id="navlogin" class="btn btn-secondary my-2 my-sm-0" onclick="location.href='/main'">로그인</button>
+              {% endif %}
+            </form>
+          </ul>
+        </div> 
+      </div> 
+  </nav>
+<div id="__1">
+	<img id="_39" src="/static/image/image/_39.png" >
+		
+	<img id="_41" src="/static/image/image/_41.png">
+		
+	<svg class="_1" viewBox="0 0 285 285">
+		<path id="_1" d="M 285 0 L 0 285">
+		</path>
+	</svg>
+	<svg class="_5" viewBox="0 0 285 285">
+		<path id="_5" d="M 285 0 L 0 285">
+		</path>
+	</svg>
+	<svg class="_27" viewBox="0 0 285 285">
+		<path id="_27" d="M 285 0 L 0 285">
+		</path>
+	</svg>
+	<svg class="_25" viewBox="0 0 285 285">
+		<path id="_25" d="M 285 0 L 0 285">
+		</path>
+	</svg>
+	<svg class="_7" viewBox="0 0 284 290">
+		<path id="_7" d="M 284 0 L 0 290">
+		</path>
+	</svg>
+	<svg class="_2" viewBox="0 0 72 72">
+		<path id="_2" d="M 72 0 L 0 72">
+		</path>
+	</svg>
+	<svg class="_4" viewBox="0 0 72 72">
+		<path id="_4" d="M 72 0 L 0 72">
+		</path>
+	</svg>
+	<svg class="_6" viewBox="0 0 106.5 106.25">
+		<path id="_6" d="M 106.5 0 L 0 106.25">
+		</path>
+	</svg>
+	<svg class="_28" viewBox="0 0 106.5 106.25">
+		<path id="_28" d="M 106.5 0 L 0 106.25">
+		</path>
+	</svg>
+	<svg class="_26" viewBox="0 0 106.5 106.25">
+		<path id="_26" d="M 106.5 0 L 0 106.25">
+		</path>
+	</svg>
+	<svg class="_9" viewBox="0 0 52 52">
+		<path id="_9" d="M 52 0 L 0 52">
+		</path>
+	</svg>
+	<svg class="_8" viewBox="0 0 72 72">
+		<path id="_8" d="M 72 0 L 0 72">
+		</path>
+	</svg>
+	<svg class="_12" viewBox="0 0 284 290">
+		<path id="_12" d="M 284 0 L 0 290">
+		</path>
+	</svg>
+	<svg class="_13" viewBox="0 0 72 72">
+		<path id="_13" d="M 72 0 L 0 72">
+		</path>
+	</svg>
+	<svg class="_14" viewBox="0 0 106.5 106.25">
+		<path id="_14" d="M 106.5 0 L 0 106.25">
+		</path>
+	</svg>
+
+	
+	<img id="pngegg_4" src="/static/image/image/pngegg_4.png" >
+		
+	<div id="ABOUT_MUSICAL">
+		<span>ABOUT MUSICAL</span>
+	</div>
+	<div id="_">
+		<span>꼭 확인하기!</span>
+	</div>
+	<div id="_bn">
+		<span>뮤덕용어정리</span>
+	</div>
+	<svg class="_10" viewBox="0 0 286 1">
+		<path id="_10" d="M 0 0 L 286 0">
+		</path>
+	</svg>
+	<svg class="_11" viewBox="0 0 286 1">
+		<path id="_11" d="M 0 0 L 286 0">
+		</path>
+	</svg>
+	<div id="___">
+		<span>뮤지컬 관람의 모든 것!</span>
+	</div>
+	<img id="Paper_Texture_12" src="/static/image/image/Paper_Texture_12.png" >
+		
+	<img id="Paper_Texture_11" src="/static/image/image/Paper_Texture_11.png" >
+		
+	<img id="Paper_Texture_12_bt" src="/static/image/image/Paper_Texture_12_bt.png" >
+		
+	<img id="Paper_Texture_11_bu" src="/static/image/image/Paper_Texture_11_bu.png" >
+		
+	<img id="Paper_Texture_11_bv" src="/static/image/image/Paper_Texture_11_bv.png" >
+		
+	<img id="Paper_Texture_12_bw" src="/static/image/image/Paper_Texture_12_bw.png" >
+		
+	<svg class="_40" viewBox="9325.83 2642.042 379.691 64.925">
+		<path id="_40" d="M 9325.830078125 2642.042236328125 L 9705.521484375 2642.042236328125 L 9683.21484375 2675.054931640625 L 9705.521484375 2706.96728515625 L 9325.830078125 2706.96728515625 L 9348.1953125 2675.054931640625 L 9325.830078125 2642.042236328125 Z">
+		</path>
+	</svg>
+	<svg class="_41_by" viewBox="9325.83 2642.042 379.691 64.925">
+		<path id="_41_by" d="M 9325.830078125 2642.042236328125 L 9705.521484375 2642.042236328125 L 9683.21484375 2675.054931640625 L 9705.521484375 2706.96728515625 L 9325.830078125 2706.96728515625 L 9348.1953125 2675.054931640625 L 9325.830078125 2642.042236328125 Z">
+		</path>
+	</svg>
+	<img id="_40_bz" src="/static/image/image/_40_bz.png">
+		
+	<img id="pngegg_8" src="/static/image/image/pngegg_8.png">
+		
+	<svg class="_168">
+		<rect id="_168" rx="0" ry="0" x="0" y="0" width="1920" height="95">
+		</rect>
+	</svg>
+	<a href="http://ticket.interpark.com/"><svg class="_42" viewBox="-7.001 -6174.5 260 126.337">
+		<path id="_42" d="M 252.9993133544922 -6048.1630859375 L -7.000658512115479 -6048.1630859375 L -7.000692367553711 -6174.5 L 252.9977722167969 -6174.5 L 220.7848510742188 -6114.546875 L 252.9968872070312 -6048.1650390625 L 252.9993133544922 -6048.1630859375 L 252.9965209960938 -6048.1630859375 L 252.9993133544922 -6048.1630859375 Z">
+		</path>
+	</svg><a>
+	<a href="https://ticket.melon.com/main/index.htm"><svg class="_43" viewBox="-7.001 -6174.5 260 126.337">
+		<path id="_43" d="M 252.9993133544922 -6048.1630859375 L -7.000658512115479 -6048.1630859375 L -7.000692367553711 -6174.5 L 252.9977722167969 -6174.5 L 220.7848510742188 -6114.546875 L 252.9968872070312 -6048.1650390625 L 252.9993133544922 -6048.1630859375 L 252.9965209960938 -6048.1630859375 L 252.9993133544922 -6048.1630859375 Z">
+		</path>
+	</svg><a>
+	<a href="http://ticket.yes24.com/"><svg class="_44" viewBox="-7.001 -6174.5 260 126.337">
+		<path id="_44" d="M 252.9993133544922 -6048.1630859375 L -7.000658512115479 -6048.1630859375 L -7.000692367553711 -6174.5 L 252.9977722167969 -6174.5 L 220.7848510742188 -6114.546875 L 252.9968872070312 -6048.1650390625 L 252.9993133544922 -6048.1630859375 L 252.9965209960938 -6048.1630859375 L 252.9993133544922 -6048.1630859375 Z">
+		</path>
+	</svg><a>
+	<div id="_b">
+		<span>인터파크티켓</span>
+	</div>
+	<div id="_ca">
+		<span>멜론티켓</span>
+	</div>
+	<div id="YES24">
+		<span>YES24</span>
+	</div>
+	<a id="_cb" href="http://ticket.interpark.com/"><span>바로가기</span><a>
+	
+	<a id="_cc" href="http://ticket.interpark.com/"><span>바로가기</span><a>
+	
+	<a id="_cd" href="http://ticket.interpark.com/"><span>바로가기</span><a>
+
+	<img id="e3" src="/static/image/image/e3.png" >
+		
+	<img id="e1" src="/static/image/image/e1.png" >
+		
+	<img id="e5" src="/static/image/image/e5.png" >
+		
+	<img id="e2" src="/static/image/image/e2.png" >
+		
+	<img id="e6" src="/static/image/image/e6.png" >
+		
+	<img id="e4" src="/static/image/image/e4.png" >
+	
+	<img id="_108" src="/static/image/image/그룹 112.png" >
+	
+	
+<section class="book">
+  <div id="p">
+    <p></p>
+  </div>
+  <div id="p">
+    <p></p>
+  </div>  
+</section>
+
+	
+	<svg class="_541">
+		<rect id="_541" rx="0" ry="0" x="0" y="0" width="590" height="713">
+		</rect>
+	</svg>
+</div>
+</body>
+</html>

@@ -1,110 +1,220 @@
 <!DOCTYPE html>
-<html lang="ko">
-
+{% load static %}
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>모모뮤 회원가입📝</title>
+<meta charset="utf-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>회원가입</title>
+<!-- <link rel="stylesheet" href="{% static 'register copy.css' %}"> -->
+<link rel="stylesheet" href="{% static 'register copy 3.css' %}">
 
-  <!-- Bootstrap CSS -->
-  <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous"> -->
-  <link rel="stylesheet" href="/static/bootstrap.min.css">
-  
-  <style>
-    .input-form {
-      max-width: 460px;
-
-      margin-top: 80px;
-      padding: 32px;
-
-      background: #fff;
-      -webkit-border-radius: 10px;
-      -moz-border-radius: 10px;
-      border-radius: 10px;
-      -webkit-box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.15);
-      -moz-box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.15);
-      box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.15)
-    }
-  </style>
 </head>
-
 <body>
-  <div class="container">
-    <div class="input-form-backgroud row">
-      <div class="input-form col-md-12 mx-auto text-center">
-        <h4 class="mb-3">회원가입📝</h4>
+<div id="bg11">
+	<img id="_17" src="/static/image/_17.png">
+		
+	<img id="_16" src="/static/image/_16.png">
+		
+	<svg class="_1" viewBox="0 0 285 285">
+		<path id="_1" d="M 285 0 L 0 285">
+		</path>
+	</svg>
+	<svg class="_5" viewBox="0 0 285 285">
+		<path id="_5" d="M 285 0 L 0 285">
+		</path>
+	</svg>
+	<svg class="_7" viewBox="0 0 285 285">
+		<path id="_7" d="M 285 0 L 0 285">
+		</path>
+	</svg>
+	<svg class="_18" viewBox="0 0 285 285">
+		<path id="_18" d="M 285 0 L 0 285">
+		</path>
+	</svg>
+	<svg class="_20" viewBox="0 0 285 285">
+		<path id="_20" d="M 285 0 L 0 285">
+		</path>
+	</svg>
+	<svg class="_22" viewBox="0 0 285 285">
+		<path id="_22" d="M 285 0 L 0 285">
+		</path>
+	</svg>
+	<svg class="_2" viewBox="0 0 72 72">
+		<path id="_2" d="M 72 0 L 0 72">
+		</path>
+	</svg>
+	<svg class="_4" viewBox="0 0 72 72">
+		<path id="_4" d="M 72 0 L 0 72">
+		</path>
+	</svg>
+	<svg class="_6" viewBox="0 0 106.5 106.25">
+		<path id="_6" d="M 106.5 0 L 0 106.25">
+		</path>
+	</svg>
+	<svg class="_9" viewBox="0 0 52 52">
+		<path id="_9" d="M 52 0 L 0 52">
+		</path>
+	</svg>
+	<svg class="_8" viewBox="0 0 72 72">
+		<path id="_8" d="M 72 0 L 0 72">
+		</path>
+	</svg>
+	<svg class="_19" viewBox="0 0 72 72">
+		<path id="_19" d="M 72 0 L 0 72">
+		</path>
+	</svg>
+	<svg class="_10" viewBox="0 0 286 1">
+		<path id="_10" d="M 0 0 L 286 0">
+		</path>
+	</svg>
+	<svg class="_11" viewBox="0 0 286 1">
+		<path id="_11" d="M 0 0 L 286 0">
+		</path>
+	</svg>
+	<div id="__">
+		<span>모두 모여 뮤지컬</span>
+	</div>
+	<img id="_1_bh" src="/static/image/image/_1_bh.png" srcset="/static/image/image/_1_bh.png 1x">
+		
+	<svg class="_2_bi" viewBox="0 0 1093 978">
+		<path id="_2_bi" d="M 1049.593017578125 977.9999389648438 L 1049.593017578125 977.9993286132812 L 43.40712738037109 977.9993286132812 C 43.40641021728516 974.064453125 42.25719451904297 970.244873046875 39.990234375 966.646240234375 C 37.80105590820312 963.171142578125 34.66829681396484 960.0484619140625 30.67897033691406 957.3655395507812 C 26.68963623046875 954.6823120117188 22.04684448242188 952.5753784179688 16.87990951538086 951.1029052734375 C 11.52902984619141 949.578125 5.849884033203125 948.8051147460938 0 948.8051147460938 L 0 29.19376754760742 C 5.850605010986328 29.19327926635742 11.52957153320312 28.42037200927734 16.88026809692383 26.89571189880371 C 22.04721069335938 25.42336082458496 26.6898193359375 23.31640815734863 30.67914581298828 20.63335418701172 C 34.66865539550781 17.95030212402344 37.80141448974609 14.82776260375977 39.9906005859375 11.35270118713379 C 42.25773620605469 7.753928184509277 43.40712738037109 3.934380531311035 43.40712738037109 0 L 1049.593017578125 0 C 1049.59375 3.934865474700928 1050.742919921875 7.754295349121094 1053.009887695312 11.35294437408447 C 1055.199096679688 14.82800388336182 1058.331665039062 17.95042610168457 1062.321166992188 20.63347244262695 C 1066.310546875 23.31664848327637 1070.953002929688 25.42360687255859 1076.120239257812 26.89595413208008 C 1081.470947265625 28.42073631286621 1087.150024414062 29.19376754760742 1093 29.19376754760742 L 1093 948.8051147460938 C 1087.149291992188 948.8055419921875 1081.470336914062 949.5784912109375 1076.119750976562 951.1031494140625 C 1070.952880859375 952.575439453125 1066.310302734375 954.6824951171875 1062.320678710938 957.3656005859375 C 1058.331420898438 960.048828125 1055.198608398438 963.1712646484375 1053.009521484375 966.646484375 C 1050.742431640625 970.2453002929688 1049.593017578125 974.06494140625 1049.593017578125 977.9993286132812 L 1049.593017578125 977.9999389648438 Z">
+		</path>
+	</svg>
+	<svg class="_3" viewBox="0 0 1036 941">
+		<path id="_3" d="M 994.8568725585938 940.9999389648438 L 994.8568725585938 940.9992065429688 L 41.14344787597656 940.9992065429688 C 41.14276885986328 937.2132568359375 40.05348205566406 933.5382690429688 37.90474700927734 930.0757446289062 C 35.82973480224609 926.7321166992188 32.86034393310547 923.7277221679688 29.07906341552734 921.1461791992188 C 25.29777526855469 918.564453125 20.89710998535156 916.5372314453125 15.99962997436523 915.1204833984375 C 10.92779159545898 913.6533813476562 5.544811248779297 912.9095458984375 0 912.9095458984375 L 0 28.08929634094238 C 5.545497894287109 28.08882904052734 10.92830276489258 27.34515190124512 15.99996948242188 25.87817573547363 C 20.89745330810547 24.46153259277344 25.29795074462891 22.43428802490234 29.07923889160156 19.85274505615234 C 32.86069488525391 17.27120399475098 35.83007049560547 14.26678466796875 37.90509033203125 10.92319202423096 C 40.05400085449219 7.460579395294189 41.14344787597656 3.785535097122192 41.14344787597656 0 L 994.8568725585938 0 C 994.8574829101562 3.786002159118652 995.9467163085938 7.460931301116943 998.0953979492188 10.92343044281006 C 1000.170471191406 14.2670202255249 1003.139587402344 17.27131652832031 1006.921081542969 19.85285949707031 C 1010.702453613281 22.43452262878418 1015.102844238281 24.46176910400391 1020.000427246094 25.87840843200684 C 1025.072021484375 27.34551239013672 1030.455078125 28.08929634094238 1036 28.08929634094238 L 1036 912.9095458984375 C 1030.454345703125 912.9099731445312 1025.071533203125 913.65380859375 1020.000061035156 915.1207275390625 C 1015.102600097656 916.5372924804688 1010.702209472656 918.5646362304688 1006.920715332031 921.146240234375 C 1003.139343261719 923.7278442382812 1000.169982910156 926.7323608398438 998.0951538085938 930.0759887695312 C 995.9462280273438 933.5386352539062 994.8568725585938 937.2138061523438 994.8568725585938 940.9992065429688 L 994.8568725585938 940.9999389648438 Z">
+		</path>
+	</svg>
+	<div id="___bk">
+		<span>모 모 뮤</span>
+	</div>
+	<div id="_bl">
+		<span>회원가입</span>
+	</div>
+	<svg class="_24" viewBox="0 0 1006 1.5">
+		<path id="_24" d="M 0 0 L 1006 0">
+		</path>
+	</svg>
+	<div id="_bn">
+		<span>이름</span>
+	</div>
+	<div id="_">
+		<span>닉네임</span><br>
+	</div>
+	<div id="_bp">
+		<span>아이디</span>
+	</div>
+	<div id="_bq">
+		<span>비밀번호</span>
+	</div>
+	<div id="__br">
+		<span>비밀번호 확인</span>
+	</div>
 
-        <div class="mb-1 mx-auto text-center">
-          <p>
+	<div class="mb-1 mx-auto text-center">
+          <p id="error">
             {{ error }}
           </p>
         </div>
 
         <form class="validation-form" novalidate method="POST" action=".">
           {% csrf_token %}   
-          <div class="mb-3">
-            <label for="username">이름</label>
-            <input type="text" class="form-control" id="username" name="username" placeholder="" required>
-            <div class="invalid-feedback">
+          <div class="username">
+            <input type="text" class="username" id="username" name="username" placeholder="이름을 입력해주세요." required>
+           <div class="invalid-feedback" id="namecheck">
               이름을 입력해주세요.
             </div>
           </div>
 
-          <div class="mb-3">
-            <label for="nickname">별명</label>
-            <input type="nickname" class="form-control" id="nickname" name="nickname" placeholder="" required>
-            <div class="invalid-feedback">
+          <div class="nickname">
+            <input type="nickname" class="nickname" id="nickname" name="nickname" placeholder="별명을 입력해주세요." required>
+            <div class="invalid-feedback" id="nicknamecheck"> 
               별명을 입력해주세요.
             </div>
           </div>
 
-          <div class="mb-3">
-            <label for="email">이메일</label>
-            <input type="email" class="form-control" id="email" name="email" placeholder="your@example.com" required>
-            <div class="invalid-feedback">
+          <div class="email">
+            
+            <input type="email" class="email" id="email" name="email" placeholder="your@example.com" required>
+            <div class="invalid-feedback" id="emailcheck">
               이메일을 입력해주세요.
             </div>
           </div>
 
-          <div class="mb-3">
-            <label for="password">비밀번호</label>
-            <input type="password" class="form-control" id="password" name="password" placeholder="비밀번호를 입력해 주세요." required>
-            <div class="invalid-feedback">
+          <div class="password">
+            
+            <input type="password" class="password" id="password" name="password" placeholder="비밀번호를 입력해 주세요." required>
+            <div class="invalid-feedback" id="pwcheck">
               비밀번호를 입력해주세요.
             </div>
           </div>
 
-          <div class="mb-3">
-            <label for="re_password">비밀번호 확인</label>
-            <input type="password" class="form-control" id="re_password" name="re_password" placeholder="위와 동일한 비밀번호를 다시 입력해 주세요." required>
-            <div class="invalid-feedback">
+          <div class="re_password">
+            
+            <input type="password" class="re_password" id="re_password" name="re_password" placeholder="위와 동일한 비밀번호를 다시 입력해 주세요." required>
+            <div class="invalid-feedback" id="pw2check">
               위와 동일한 비밀번호를 다시 입력해주세요.
             </div>
           </div>
 
-          <hr class="mb-4">
+          
           <div class="custom-control custom-checkbox">
             <input type="checkbox" class="form-check-input" id="validationFormCheck1" required>
             <label class="form-check-label" for="validationFormCheck1">개인정보 수집 및 이용에 동의합니다.</label>
             <div class="invalid-feedback">가입을 완료하기 전에 동의해 주세요.</div>
           </div>
 
-          <div class="mb-4"></div>
-          <button class="btn btn-primary btn-lg btn-block" type="submit">가입 완료</button>
+          
+          <button class="btn2" type="submit" >회원 가입</button>
         </form>
       </div>
-    </div>
 
-    <footer class="my-3 text-center text-small">
-      <p class="mb-1">&copy; 2021 모모뮤</p>
-    </footer>
-  </div>
+	
+	
+	<!-- <svg class="_174">
+		<rect id="_174" rx="20.5" ry="20.5" x="0" y="0" width="143" height="41">
+		</rect>
+	</svg>
+	<svg class="_175">
+		<rect id="_175" rx="20.5" ry="20.5" x="0" y="0" width="143" height="41">
+		</rect>
+	</svg> -->
+	<svg class="_170">
+		<rect id="_170" rx="20.5" ry="20.5" x="0" y="0" width="519" height="41">
+		</rect>
+	</svg>
+	<svg class="_171">
+		<rect id="_171" rx="20.5" ry="20.5" x="0" y="0" width="519" height="41">
+		</rect>
+	</svg>
+	<svg class="_172">
+		<rect id="_172" rx="20.5" ry="20.5" x="0" y="0" width="674" height="41">
+		</rect>
+	</svg>
+	<svg class="_173">
+		<rect id="_173" rx="20.5" ry="20.5" x="0" y="0" width="674" height="41">
+		</rect>
+	</svg>
+	<svg class="mb-5">
+		<rect id="mb-5" rx="20.5" ry="20.5" x="0" y="0" width="245" height="41">
+		</rect>
+	</svg>
+	<!-- <div id="_b">
+		<span>중복확인</span>
+	</div>
+	<div id="_ca">
+		<span>중복확인</span>
+	</div> -->
+	<svg class="_168">
+		<rect id="_168" rx="0" ry="0" x="0" y="0" width="1920" height="95">
+		</rect>
+	</svg>
+</div>
 
-<!-- 폼 유효성 검사 함수 -->
-  <script>
+
+
+
+<script>
     window.addEventListener('load', () => {
       const forms = document.getElementsByClassName('validation-form');
 

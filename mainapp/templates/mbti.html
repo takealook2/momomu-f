@@ -1,0 +1,150 @@
+{%load static%}
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MBTI_main</title>
+<link rel="stylesheet" href="{% static 'mbti.css' %}">
+<link rel="stylesheet" href="/static/bootstrap.min.css">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</head>
+<style>
+.btn-secondary {
+    background-color: rgb(125,122,191);
+    border-color: rgb(125,122,191);
+    }
+
+    .btn:hover {
+    color: white;
+	background-color: rgb(165,171,203);
+    border-color: rgb(165,171,203);
+    }
+	._86 {
+    mix-blend-mode: screen;
+    overflow: visible;
+    position: absolute;
+    width: 772.126px;
+    height: 865px;
+    left: 574px;
+    top: 0px;
+    transform: matrix(1,0,0,1,0,0);
+}
+#_104 {
+		position: absolute;
+		width: 492px;
+		height: 207px;
+		left: 714px;
+		top: 437px;
+		overflow: visible;
+	}
+	#_105 {
+		position: absolute;
+		width: 484px;
+		height: 21px;
+		left: 718px;
+		top: 644px;
+		overflow: visible;
+	}
+	#_106 {
+		position: absolute;
+		width: 484px;
+		height: 21px;
+		left: 718px;
+		top: 416px;
+		overflow: visible;
+	}
+</style>
+<body>
+{%load static%}
+<header>    
+	<div id="logo">
+		<a href="{%url 'first'%}" id="mainlogo">모모뮤</a>
+		</div>
+</header>
+{%load static%}
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+	<div class="container-fluid">
+	<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+	<span class="navbar-toggler-icon"></span>
+ 	</button>
+	<div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" id="nav1" href="{%url 'about'%}">ABOUT 뮤지컬</a>
+            </li>
+			
+			<li class="nav-item">
+              <a class="nav-link" id="nav2" href="{%url 'rank'%}">뮤지컬 정보</a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link"  id="nav3" href="{%url 'board'%}">게시판</a>
+            </li>
+            {% if request.session.user %}
+			<li class="nav-item">
+              <a class="nav-link" id="nav4" href="{%url 'board'%}">마이페이지</a>
+            </li>
+            
+            
+            
+            <img src="{% static 'mu.jpg'%}"  id="img444" alt="" width="40" height="40">
+            <a class="nav-link" id="nav5" href="#">
+            반갑습니다 <b>{{request.session.nickname}}</b> 님
+            </a>
+            {% endif %}
+            
+            <form class="form-inline my-2 my-lg-0">
+              {% if request.session.user %}
+              <button type="button" id="navlogin" class="btn btn-secondary my-2 my-sm-0" onclick="location.href='/main/logout/'">로그아웃</button>
+              {% else %}
+              <button type="button" id="navlogin" class="btn btn-secondary my-2 my-sm-0" onclick="location.href='/main'">로그인</button>
+              {% endif %}
+            </form>
+          </ul>
+        </div> 
+      </div> 
+  </nav>
+<div id="-__1">
+	<img id="_48" src="/static/eunimg/_48.png" >
+		
+	<svg class="_4" viewBox="0 0 72 72">
+		<path id="_4" d="M 72 0 L 0 72">
+		</path>
+	</svg>
+	<svg class="_1" viewBox="27 -11211.449 1920 571.448">
+		<path id="_1" d="M 194.8096618652344 -10640.0009765625 C 184.8959808349609 -10656.76953125 176.9356994628906 -10674.8203125 171.2328643798828 -10693.85546875 C 161.32470703125 -10692.630859375 151.2411804199219 -10692.001953125 140.9998168945312 -10692.001953125 C 99.81773376464844 -10692.001953125 61.02731704711914 -10702.2001953125 27.00046348571777 -10720.2158203125 L 27.00046348571777 -11151.78515625 C 61.02731704711914 -11169.7998046875 99.81773376464844 -11179.998046875 140.9998168945312 -11179.998046875 C 251.3778839111328 -11179.998046875 344.6373291015625 -11106.71875 374.76806640625 -11006.146484375 C 384.6762390136719 -11007.37109375 394.7626647949219 -11008 405.0010986328125 -11008 C 491.6843566894531 -11008 567.810546875 -10962.7958984375 611.09375 -10894.6787109375 C 630.1588745117188 -10901.9912109375 650.86376953125 -10905.998046875 672.5009155273438 -10905.998046875 C 727.6534423828125 -10905.998046875 776.7265625 -10879.9619140625 808.0994873046875 -10839.513671875 C 848.21728515625 -10897.796875 915.39404296875 -10936 991.4998168945312 -10936 C 1059.281616210938 -10936 1119.984375 -10905.69140625 1160.794921875 -10857.8896484375 C 1192.436645507812 -10908.9736328125 1248.994995117188 -10943 1313.500366210938 -10943 C 1348.90966796875 -10943 1381.930908203125 -10932.7412109375 1409.741088867188 -10915.0439453125 C 1457.095581054688 -11000.30078125 1548.060668945312 -11057.9990234375 1652.499633789062 -11057.9990234375 C 1676.925170898438 -11057.9990234375 1700.599609375 -11054.8486328125 1723.163330078125 -11048.923828125 C 1762.701049804688 -11137.0888671875 1846.921752929688 -11200.87109375 1947 -11211.44921875 L 1947 -10659.5498046875 C 1932.939208984375 -10661.0361328125 1919.191162109375 -10663.572265625 1905.838745117188 -10667.0771484375 C 1901.664428710938 -10657.7685546875 1896.991333007812 -10648.7314453125 1891.85498046875 -10640.0009765625 L 194.8096618652344 -10640.0009765625 Z">
+		</path>
+	</svg>
+	<svg class="_86" viewBox="-110.853 0 772.126 865">
+		<path id="_86" d="M 89.02388000488281 0 L 453.3394165039062 0 L 661.2733154296875 865 L -110.85302734375 865 L 89.02388000488281 0 Z">
+		</path>
+	</svg>
+	<svg class="_530">
+		<rect id="_530" rx="0" ry="0" x="0" y="0" width="1920" height="1033">
+		</rect>
+	</svg>
+	<svg class="_482">
+		<rect id="_482" rx="0" ry="0" x="0" y="0" width="1920" height="95">
+		</rect>
+	</svg>
+<div class="mbticontainer">
+
+	<img id="_104" src="/static/eunimg/_104.png" >
+		
+	<img id="_105" src="/static/eunimg/_105.png" >
+		
+	<img id="_106" src="/static/eunimg/_106.png" >
+	
+	<svg class="_132">
+	<rect id="_132" rx="27.5" x="0" y="0" width="214" height="55"></rect>
+	</svg>
+	
+	<div id="start">
+		<span><a href="{%url 'index'%}">찾으러 가기 > </a> </span>
+	</div>
+</div>
+</div>
+</body>
+</html>

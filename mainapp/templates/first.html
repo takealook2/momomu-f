@@ -1,5 +1,708 @@
-{% extends 'base.html' %}
+{%load static%}
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>모두 모여 뮤지컬</title>
+<link rel="stylesheet" href="{% static 'CSS/mbti.css' %}">
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+<link rel="stylesheet" href="/static/bootstrap.min.css">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<style>
+/* 공통 nav 바 */
+@font-face {
+    font-family: 'HSBombaram3_Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10@1.1/HSBombaram3_Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+	}
 
-{% block content %}
-<br><h3>첫번째 화면입니다.</h3><hr>
-{% endblock %}
+	@font-face {
+    font-family: 'MaruBuri-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10-21@1.0/MaruBuri-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+	}	
+
+
+#mainlogo {
+    filter: drop-shadow(0px 5px 9px rgba(0, 0, 0, 0.71));
+    left: 140px;
+    top: 3px;
+    position: relative;
+    overflow: visible;
+    width: 107px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: 'HSBombaram3_Regular';
+    text-decoration:none;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    color: rgba(255,255,255,1);
+    z-index: 1;
+}
+
+
+#logo {
+    background-color: rgba(52,62,120,1);
+    z-index: 1;
+	width:1920px
+}
+.mainnamebackground {
+    position: absolute;
+    overflow: visible;
+    width: 1920px;
+    height: 60px;
+    left: 0px;
+    top: 0px;
+    z-index: 1;
+}
+
+
+#navbackground {
+    fill: rgba(165,171,203,1);
+    z-index: 1;
+	}
+.navbackground {
+    position: absolute;
+    overflow: visible;
+    width: 1920px;
+    height: 60px;
+    left: 0px;
+    top: 60px;
+    z-index: 1;
+}
+
+#nav1 {
+    left: 140px;
+    top: 7px;
+    position: absolute;
+    overflow: visible;
+    width: 117px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: 'HSBombaram3_Regular';
+    text-decoration:none;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    color: rgba(18,18,18,1);
+    z-index: 1;
+}
+
+#nav2 {
+    left: 334px;
+    top: 7px;
+    position: absolute;
+    overflow: visible;
+    width: 91px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: 'HSBombaram3_Regular';
+    text-decoration:none;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    color: rgba(18,18,18,1);
+    z-index: 1;
+}
+
+#nav3 {
+    left: 496px;
+    top: 7px;
+    position: absolute;
+    overflow: visible;
+    width: 91px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: 'HSBombaram3_Regular';
+    text-decoration:none;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    color: rgba(18,18,18,1);
+    z-index: 1;
+}
+#nav4 {
+    left: 662px;
+    top: 7px;
+    position: absolute;
+    overflow: visible;
+    width: 91px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: 'HSBombaram3_Regular';
+    text-decoration:none;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    color: rgba(18,18,18,1);
+    z-index: 1;
+}
+
+#nickname {
+    left: 1573px;
+    top: 79px;
+    position: absolute;
+    overflow: visible;
+    width: 61px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: 'MaruBuri-Regular';
+    text-decoration:none ;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    color: rgba(0,0,0,1);
+    z-index: 1;
+}
+#logout {
+    left: 1695px;
+    top: 81px;
+    position: absolute;
+    overflow: visible;
+    width: 61px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: 'MaruBuri-Regular';
+    text-decoration:none ;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    color: rgba(0,0,0,1);
+}
+
+#myimage {
+    fill: rgba(255,255,255,1);
+    z-index: 1;
+}
+.myimage {
+    position: absolute;
+    overflow: visible;
+    width: 34px;
+    height: 34px;
+    left: 1520px;
+    top: 74px;
+    z-index: 1;
+}
+
+/* 공통 nav 바 끝 */
+
+.bg-light {
+    background-color: rgba(165,171,203,1);
+    z-index: 1;
+}
+
+#navlogin{
+	position: relative;
+	left: 1573px;
+    top: 1px;
+	font-family: 'MaruBuri-Regular';
+	color: rgba(0,0,0,1);
+}
+
+#nav5{
+	position: relative;
+	left: 1500px;
+    top: 1px;
+	font-family: 'MaruBuri-Regular';
+	color: rgba(0,0,0,1);
+}
+
+#img444{
+	position: relative;
+	left: 1500px;
+    top: 1px;
+	
+}
+
+.navbar{
+	width:1920px
+    height
+}
+
+.btn-secondary {
+    background-color: rgb(125,122,191);
+    border-color: rgb(125,122,191);
+    }
+
+    .btn:hover {
+    color: white;
+    background-color: rgb(165,171,203);
+    border-color: rgb(165,171,203);
+    }
+/*공통 nav바 끝*/
+
+
+/*main.html css*/
+
+
+
+	.mediaViewInfo {
+		--web-view-name: 모두 모여 뮤지컬;
+		--web-view-id: __1;
+		--web-scale-on-resize: true;
+		--web-enable-deep-linking: true;
+	}
+	:root {
+		--web-view-ids: __1;
+	}
+	* {
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+		border: none;
+	}
+	#__1 {
+		position: absolute;
+		width: 1920px;
+		height: 1654px;
+		background: linear-gradient(179deg, rgba(0,24,65,1) 0%, rgba(75,151,186,1) 54.48%, rgba(106,20,151,1) 88.03%, rgba(57,0,113,1) 100%);
+		overflow: hidden;
+		--web-view-name: 메인 – 1;
+		--web-view-id: __1;
+		--web-scale-on-resize: true;
+		--web-enable-deep-linking: true;
+	}
+	#_21 {
+		mix-blend-mode: soft-light;
+		position: absolute;
+		width: 2072.001px;
+		height: 1349px;
+		left: -119px;
+		top: 545.001px;
+		overflow: visible;
+	}
+	#_19 {
+		mix-blend-mode: soft-light;
+		filter: blur(4px);
+		position: absolute;
+		width: 1920px;
+		height: 1200.001px;
+		left: 0px;
+		top: 454px;
+		overflow: visible;
+	}
+	#_22 {
+		opacity: 0.49;
+		mix-blend-mode: lighten;
+		position: absolute;
+		width: 1920.001px;
+		height: 1654.001px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+
+
+	#__ba {
+		filter: drop-shadow(0px 5px 9px rgba(0, 0, 0, 0.71));
+		left: 278px;
+		top: 858px;
+		position: absolute;
+		overflow: visible;
+		width: 183px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: 'HSBombaram3_Regular';
+    	text-decoration:none;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 25px;
+		color: rgba(255,255,255,1);
+	}
+	#_1_ {
+		position: absolute;
+		width: 260px;
+		height: 358px;
+		left: 276px;
+		top: 951px;
+		overflow: visible;
+	}
+	#_4_ba {
+		opacity: 0.64;
+		fill: rgba(214,188,126,1);
+		z-index: 1;
+	}
+	._4_ba {
+		overflow: visible;
+		position: absolute;
+		width: 260px;
+		height: 358px;
+		left: 0px;
+		top: 0px;
+		transform: matrix(1,0,0,1,0,0);
+		z-index: 1;
+	}
+	#_150{
+		z-index: 5;
+	}
+	._150 {
+		position: absolute;
+		overflow: visible;
+		width: 230px;
+		height: 323px;
+		left: 15px;
+		top: 18px;
+		z-index: 5;
+	}
+	#_1_bc {
+		position: absolute;
+		width: 260px;
+		height: 358px;
+		left: 553px;
+		top: 951px;
+		overflow: visible;
+	}
+	#_4_bd {
+		opacity: 0.64;
+		fill: rgba(214,188,126,1);
+	}
+	._4_bd {
+		overflow: visible;
+		position: absolute;
+		width: 260px;
+		height: 358px;
+		left: 0px;
+		top: 0px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#_150_be {
+		fill: rgba(197,197,197,1);
+	}
+	._150_be {
+		position: absolute;
+		overflow: visible;
+		width: 230px;
+		height: 323px;
+		left: 15px;
+		top: 18px;
+	}
+	#_1_bf {
+		position: absolute;
+		width: 260px;
+		height: 358px;
+		left: 830px;
+		top: 951px;
+		overflow: visible;
+	}
+	#_4_bg {
+		opacity: 0.64;
+		fill: rgba(214,188,126,1);
+	}
+	._4_bg {
+		overflow: visible;
+		position: absolute;
+		width: 260px;
+		height: 358px;
+		left: 0px;
+		top: 0px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#_150_bh {
+		fill: rgba(197,197,197,1);
+	}
+	._150_bh {
+		position: absolute;
+		overflow: visible;
+		width: 230px;
+		height: 323px;
+		left: 15px;
+		top: 18px;
+	}
+	#_1_bi {
+		position: absolute;
+		width: 260px;
+		height: 358px;
+		left: 1107px;
+		top: 951px;
+		overflow: visible;
+	}
+	#_4_bj {
+		opacity: 0.64;
+		fill: rgba(214,188,126,1);
+	}
+	._4_bj {
+		overflow: visible;
+		position: absolute;
+		width: 260px;
+		height: 358px;
+		left: 0px;
+		top: 0px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#_150_bk {
+		fill: rgba(197,197,197,1);
+	}
+	._150_bk {
+		position: absolute;
+		overflow: visible;
+		width: 230px;
+		height: 323px;
+		left: 15px;
+		top: 18px;
+	}
+	#_1_bl {
+		position: absolute;
+		width: 260px;
+		height: 358px;
+		left: 1384px;
+		top: 951px;
+		overflow: visible;
+	}
+
+	#swiper-container {
+		fill: rgba(234,234,234,1);
+	}
+	.swiper-container {
+		position: absolute;
+		overflow: visible;
+		width: 1920px;
+		height: 750px;
+		left: 0px;
+	}
+	#_4_bm {
+		opacity: 0.64;
+		fill: rgba(214,188,126,1);
+	}
+	._4_bm {
+		overflow: visible;
+		position: absolute;
+		width: 260px;
+		height: 358px;
+		left: 0px;
+		top: 0px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#_150_bn {
+		fill: rgba(197,197,197,1);
+	}
+	._150_bn {
+		position: absolute;
+		overflow: visible;
+		width: 230px;
+		height: 323px;
+		left: 15px;
+		top: 18px;
+	}
+	#_168 {
+		fill: rgba(32,67,99,1);
+	}
+	._168 {
+		position: absolute;
+		overflow: visible;
+		width: 1920px;
+		height: 95px;
+		left: 0px;
+		top: 1559px;
+	}
+
+
+
+	#swiper{
+		top: 700px;
+	}
+	#_550_ {
+		fill: url(#_550_);
+	}
+	._550_ {
+		mix-blend-mode: darken;
+		position: absolute;
+		overflow: visible;
+		width: 1920px;
+		height: 822px;
+		left: 0px;
+		top: 737px;
+	}
+	#_551 {
+		opacity: 0.28;
+		fill: rgba(93,93,145,1);
+	}
+	._551 {
+		position: absolute;
+		overflow: visible;
+		width: 1920px;
+		height: 822px;
+		left: 0px;
+		top: 737px;
+	}
+    {% comment %} nav ul li {
+            display:inline;
+    } {% endcomment %}
+</style>
+
+</head>
+<body>
+
+{%load static%}
+    
+<header>    
+	<div id="logo">
+		<a href="{%url 'first'%}" id="mainlogo">모모뮤</a>
+		</div>
+</header>
+
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+	<div class="container-fluid">
+	<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+	<span class="navbar-toggler-icon"></span>
+ 	</button>
+	<div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" id="nav1" href="{%url 'about'%}">ABOUT 뮤지컬</a>
+            </li>
+			
+			<li class="nav-item">
+              <a class="nav-link" id="nav2" href="{%url 'rank'%}">뮤지컬 정보</a>
+            </li>
+            
+            <li class="nav-item">
+              <a class="nav-link"  id="nav3" href="{%url 'board'%}">게시판</a>
+            </li>
+            {% if request.session.user %}
+			<li class="nav-item">
+              <a class="nav-link" id="nav4" href="{%url 'mypage'%}">마이페이지</a>
+            </li>
+            
+            
+            
+            <img src="{% static 'mu.jpg'%}"  id="img444" alt="" width="40" height="40">
+            <a class="nav-link" id="nav5" href="#">
+            반갑습니다 <b>{{request.session.nickname}}</b> 님
+            </a>
+            {% endif %}
+            
+            <form class="form-inline my-2 my-lg-0">
+              {% if request.session.user %}
+              <button type="button" id="navlogin" class="btn btn-secondary my-2 my-sm-0" onclick="location.href='/main/logout/'">로그아웃</button>
+              {% else %}
+              <button type="button" id="navlogin" class="btn btn-secondary my-2 my-sm-0" onclick="location.href='/main'">로그인</button>
+              {% endif %}
+            </form>
+          </ul>
+        </div> 
+      </div> 
+  </nav>
+
+<div id="__1">
+	<svg class="_550_">
+		<linearGradient id="_550_" spreadMethod="pad" x1="0.5" x2="0.5" y1="0.166" y2="1.229">
+			<stop offset="0" stop-color="#001841" stop-opacity="1"></stop>
+			<stop offset="0.3541" stop-color="#4b97ba" stop-opacity="1"></stop>
+			<stop offset="0.7847" stop-color="#6a1497" stop-opacity="1"></stop>
+			<stop offset="1" stop-color="#390071" stop-opacity="1"></stop>
+		</linearGradient>
+		<rect id="_550_" rx="0" ry="0" x="0" y="0" width="1920" height="822">
+		</rect>
+	</svg>
+	<svg class="_551">
+		<rect id="_551" rx="0" ry="0" x="0" y="0" width="1920" height="822">
+		</rect>
+	<img id="_21" src="/static/image/mainimg/_21.png" >
+		
+	<img id="_19" src="/static/image/mainimg/_19.png" >
+		
+	<img id="_22" src="/static/image/mainimg/_22.png" >
+	
+
+
+	<div id="__ba">
+		<span>상영중인 뮤지컬</span>
+	</div>
+	<div id="_1_">
+		<svg class="_4_ba" viewBox="0 0 260 358">
+			<path id="_4_ba" d="M 249.6744232177734 358 L 249.6744232177734 357.9997863769531 L 10.32557582855225 357.9997863769531 C 10.32540416717529 356.5593872070312 10.05203151702881 355.1612243652344 9.512773513793945 353.8439331054688 C 8.992016792297363 352.5718688964844 8.246804237365723 351.4287719726562 7.29783296585083 350.4467163085938 C 6.348861217498779 349.4645080566406 5.244446277618408 348.6932678222656 4.0153489112854 348.1542053222656 C 2.742495536804199 347.5960693359375 1.391555190086365 347.3131408691406 0 347.3131408691406 L 0 10.68647289276123 C 1.391726613044739 10.68629360198975 2.742624759674072 10.40336799621582 4.015434265136719 9.845261573791504 C 5.244533061981201 9.306302070617676 6.348904609680176 8.535045623779297 7.297874927520752 7.552905559539795 C 8.246889114379883 6.570765495300293 8.992101669311523 5.427750110626221 9.512860298156738 4.155692577362061 C 10.05216026306152 2.838350057601929 10.32557582855225 1.440192580223083 10.32557582855225 0 L 249.6744232177734 0 C 249.6746215820312 1.440369963645935 249.9480133056641 2.838484764099121 250.4872589111328 4.155781269073486 C 251.0080261230469 5.42783784866333 251.7532043457031 6.570810794830322 252.7021942138672 7.552947998046875 C 253.6511840820312 8.535133361816406 254.7554931640625 9.306391716003418 255.9846801757812 9.84535026550293 C 257.2575073242188 10.4035005569458 258.6084289550781 10.68647289276123 260 10.68647289276123 L 260 347.3131408691406 C 258.6082763671875 347.3132934570312 257.2573547363281 347.5962524414062 255.9845733642578 348.1543273925781 C 254.7554931640625 348.6932983398438 253.6511383056641 349.4645385742188 252.7020874023438 350.4467163085938 C 251.7531585693359 351.428955078125 251.0078887939453 352.5719299316406 250.4871826171875 353.8440246582031 C 249.9479064941406 355.161376953125 249.6744232177734 356.5595703125 249.6744232177734 357.9997863769531 L 249.6744232177734 358 Z">
+			</path>
+		</svg>
+		<svg class="_150">
+			
+			<img id="_150" class="_150" src="/static/image/mainimg/1.png" rx="0" ry="0" x="0" y="0" width="230" height="323">
+		</svg>
+	</div>
+	<div id="_1_bc">
+		<svg class="_4_bd" viewBox="0 0 260 358">
+			<path id="_4_bd" d="M 249.6744232177734 358 L 249.6744232177734 357.9997863769531 L 10.32557582855225 357.9997863769531 C 10.32540416717529 356.5593872070312 10.05203151702881 355.1612243652344 9.512773513793945 353.8439331054688 C 8.992016792297363 352.5718688964844 8.246804237365723 351.4287719726562 7.29783296585083 350.4467163085938 C 6.348861217498779 349.4645080566406 5.244446277618408 348.6932678222656 4.0153489112854 348.1542053222656 C 2.742495536804199 347.5960693359375 1.391555190086365 347.3131408691406 0 347.3131408691406 L 0 10.68647289276123 C 1.391726613044739 10.68629360198975 2.742624759674072 10.40336799621582 4.015434265136719 9.845261573791504 C 5.244533061981201 9.306302070617676 6.348904609680176 8.535045623779297 7.297874927520752 7.552905559539795 C 8.246889114379883 6.570765495300293 8.992101669311523 5.427750110626221 9.512860298156738 4.155692577362061 C 10.05216026306152 2.838350057601929 10.32557582855225 1.440192580223083 10.32557582855225 0 L 249.6744232177734 0 C 249.6746215820312 1.440369963645935 249.9480133056641 2.838484764099121 250.4872589111328 4.155781269073486 C 251.0080261230469 5.42783784866333 251.7532043457031 6.570810794830322 252.7021942138672 7.552947998046875 C 253.6511840820312 8.535133361816406 254.7554931640625 9.306391716003418 255.9846801757812 9.84535026550293 C 257.2575073242188 10.4035005569458 258.6084289550781 10.68647289276123 260 10.68647289276123 L 260 347.3131408691406 C 258.6082763671875 347.3132934570312 257.2573547363281 347.5962524414062 255.9845733642578 348.1543273925781 C 254.7554931640625 348.6932983398438 253.6511383056641 349.4645385742188 252.7020874023438 350.4467163085938 C 251.7531585693359 351.428955078125 251.0078887939453 352.5719299316406 250.4871826171875 353.8440246582031 C 249.9479064941406 355.161376953125 249.6744232177734 356.5595703125 249.6744232177734 357.9997863769531 L 249.6744232177734 358 Z">
+			</path>
+		</svg>
+		<svg class="_150_be">
+			<img id="_150_be" class="_150_be" src="/static/image/mainimg/2.png" rx="0" ry="0" x="0" y="0" width="230" height="323">
+		</svg>
+	</div>
+	<div id="_1_bf">
+		<svg class="_4_bg" viewBox="0 0 260 358">
+			<path id="_4_bg" d="M 249.6744232177734 358 L 249.6744232177734 357.9997863769531 L 10.32557582855225 357.9997863769531 C 10.32540416717529 356.5593872070312 10.05203151702881 355.1612243652344 9.512773513793945 353.8439331054688 C 8.992016792297363 352.5718688964844 8.246804237365723 351.4287719726562 7.29783296585083 350.4467163085938 C 6.348861217498779 349.4645080566406 5.244446277618408 348.6932678222656 4.0153489112854 348.1542053222656 C 2.742495536804199 347.5960693359375 1.391555190086365 347.3131408691406 0 347.3131408691406 L 0 10.68647289276123 C 1.391726613044739 10.68629360198975 2.742624759674072 10.40336799621582 4.015434265136719 9.845261573791504 C 5.244533061981201 9.306302070617676 6.348904609680176 8.535045623779297 7.297874927520752 7.552905559539795 C 8.246889114379883 6.570765495300293 8.992101669311523 5.427750110626221 9.512860298156738 4.155692577362061 C 10.05216026306152 2.838350057601929 10.32557582855225 1.440192580223083 10.32557582855225 0 L 249.6744232177734 0 C 249.6746215820312 1.440369963645935 249.9480133056641 2.838484764099121 250.4872589111328 4.155781269073486 C 251.0080261230469 5.42783784866333 251.7532043457031 6.570810794830322 252.7021942138672 7.552947998046875 C 253.6511840820312 8.535133361816406 254.7554931640625 9.306391716003418 255.9846801757812 9.84535026550293 C 257.2575073242188 10.4035005569458 258.6084289550781 10.68647289276123 260 10.68647289276123 L 260 347.3131408691406 C 258.6082763671875 347.3132934570312 257.2573547363281 347.5962524414062 255.9845733642578 348.1543273925781 C 254.7554931640625 348.6932983398438 253.6511383056641 349.4645385742188 252.7020874023438 350.4467163085938 C 251.7531585693359 351.428955078125 251.0078887939453 352.5719299316406 250.4871826171875 353.8440246582031 C 249.9479064941406 355.161376953125 249.6744232177734 356.5595703125 249.6744232177734 357.9997863769531 L 249.6744232177734 358 Z">
+			</path>
+		</svg>
+		<svg class="_150_bh">
+			<img id="_150_bh" class="_150_bh" src="/static/image/mainimg/3.png" rx="0" ry="0" x="0" y="0" width="230" height="323">
+		</svg>
+	</div>
+	<div id="_1_bi">
+		<svg class="_4_bj" viewBox="0 0 260 358">
+			<path id="_4_bj" d="M 249.6744232177734 358 L 249.6744232177734 357.9997863769531 L 10.32557582855225 357.9997863769531 C 10.32540416717529 356.5593872070312 10.05203151702881 355.1612243652344 9.512773513793945 353.8439331054688 C 8.992016792297363 352.5718688964844 8.246804237365723 351.4287719726562 7.29783296585083 350.4467163085938 C 6.348861217498779 349.4645080566406 5.244446277618408 348.6932678222656 4.0153489112854 348.1542053222656 C 2.742495536804199 347.5960693359375 1.391555190086365 347.3131408691406 0 347.3131408691406 L 0 10.68647289276123 C 1.391726613044739 10.68629360198975 2.742624759674072 10.40336799621582 4.015434265136719 9.845261573791504 C 5.244533061981201 9.306302070617676 6.348904609680176 8.535045623779297 7.297874927520752 7.552905559539795 C 8.246889114379883 6.570765495300293 8.992101669311523 5.427750110626221 9.512860298156738 4.155692577362061 C 10.05216026306152 2.838350057601929 10.32557582855225 1.440192580223083 10.32557582855225 0 L 249.6744232177734 0 C 249.6746215820312 1.440369963645935 249.9480133056641 2.838484764099121 250.4872589111328 4.155781269073486 C 251.0080261230469 5.42783784866333 251.7532043457031 6.570810794830322 252.7021942138672 7.552947998046875 C 253.6511840820312 8.535133361816406 254.7554931640625 9.306391716003418 255.9846801757812 9.84535026550293 C 257.2575073242188 10.4035005569458 258.6084289550781 10.68647289276123 260 10.68647289276123 L 260 347.3131408691406 C 258.6082763671875 347.3132934570312 257.2573547363281 347.5962524414062 255.9845733642578 348.1543273925781 C 254.7554931640625 348.6932983398438 253.6511383056641 349.4645385742188 252.7020874023438 350.4467163085938 C 251.7531585693359 351.428955078125 251.0078887939453 352.5719299316406 250.4871826171875 353.8440246582031 C 249.9479064941406 355.161376953125 249.6744232177734 356.5595703125 249.6744232177734 357.9997863769531 L 249.6744232177734 358 Z">
+			</path>
+		</svg>
+		<svg class="_150_bk">
+			<img id="_150_bk" class="_150_bk" src="/static/image/mainimg/4.png" rx="0" ry="0" x="0" y="0" width="230" height="323">
+		</svg>
+	</div>
+	<div id="_1_bl">
+		<svg class="_4_bm" viewBox="0 0 260 358">
+			<path id="_4_bm" d="M 249.6744232177734 358 L 249.6744232177734 357.9997863769531 L 10.32557582855225 357.9997863769531 C 10.32540416717529 356.5593872070312 10.05203151702881 355.1612243652344 9.512773513793945 353.8439331054688 C 8.992016792297363 352.5718688964844 8.246804237365723 351.4287719726562 7.29783296585083 350.4467163085938 C 6.348861217498779 349.4645080566406 5.244446277618408 348.6932678222656 4.0153489112854 348.1542053222656 C 2.742495536804199 347.5960693359375 1.391555190086365 347.3131408691406 0 347.3131408691406 L 0 10.68647289276123 C 1.391726613044739 10.68629360198975 2.742624759674072 10.40336799621582 4.015434265136719 9.845261573791504 C 5.244533061981201 9.306302070617676 6.348904609680176 8.535045623779297 7.297874927520752 7.552905559539795 C 8.246889114379883 6.570765495300293 8.992101669311523 5.427750110626221 9.512860298156738 4.155692577362061 C 10.05216026306152 2.838350057601929 10.32557582855225 1.440192580223083 10.32557582855225 0 L 249.6744232177734 0 C 249.6746215820312 1.440369963645935 249.9480133056641 2.838484764099121 250.4872589111328 4.155781269073486 C 251.0080261230469 5.42783784866333 251.7532043457031 6.570810794830322 252.7021942138672 7.552947998046875 C 253.6511840820312 8.535133361816406 254.7554931640625 9.306391716003418 255.9846801757812 9.84535026550293 C 257.2575073242188 10.4035005569458 258.6084289550781 10.68647289276123 260 10.68647289276123 L 260 347.3131408691406 C 258.6082763671875 347.3132934570312 257.2573547363281 347.5962524414062 255.9845733642578 348.1543273925781 C 254.7554931640625 348.6932983398438 253.6511383056641 349.4645385742188 252.7020874023438 350.4467163085938 C 251.7531585693359 351.428955078125 251.0078887939453 352.5719299316406 250.4871826171875 353.8440246582031 C 249.9479064941406 355.161376953125 249.6744232177734 356.5595703125 249.6744232177734 357.9997863769531 L 249.6744232177734 358 Z">
+			</path>
+		</svg>
+		<svg class="_150_bn">
+			<img id="_150_bn" class="_150_bn" src="/static/image/mainimg/5.png" rx="0" ry="0" x="0" y="0" width="230" height="323">
+		</svg>
+	</div>
+	<svg class="_168">
+		<rect id="_168" rx="0" ry="0" x="0" y="0" width="1920" height="95">
+		</rect>
+	</svg>
+
+  <!-- Swiper -->
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"> 
+		  <img id="banner1" src="/static/image/mainimg/banner1.png"> </div>
+      <div class="swiper-slide"> 
+		<a href="{%url 'about'%}"> <img id="banner2" src="/static/image/mainimg/banner2.png"></a></div>
+      <div class="swiper-slide">
+		<a href="{%url 'mbti'%}"><img id="banner3" src="/static/image/mainimg/banner3.png"> </a></div>
+      <!-- <div class="swiper-slide">Slide 4</div>
+      <div class="swiper-slide">Slide 5</div> -->
+    </div>
+    <!-- Add Arrows -->
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+    <!-- Add Pagination -->
+    <div class="swiper-pagination" id="swiper"></div>
+  </div>
+
+
+  <!-- Swiper JS -->
+  <script src="../package/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper('.swiper-container', {
+      cssMode: true,
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      pagination: {
+        el: '.swiper-pagination'
+      },
+      mousewheel: true,
+      keyboard: true,
+    });
+  </script>
+</div>
+</body>
+</html>

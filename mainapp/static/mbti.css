@@ -1,0 +1,1034 @@
+
+	.mediaViewInfo {
+		--web-view-name: 테스트-홈 – 1;
+		--web-view-id: -__1;
+		--web-scale-on-resize: true;
+		--web-enable-deep-linking: true;
+	}
+	:root {
+		--web-view-ids: -__1;
+	}
+	* {
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+		border: none;
+	}
+	#-__1 {
+		position: absolute;
+		width: 1920px;
+		height: 1080px;
+		background: linear-gradient(180deg, rgba(25,45,96,1) 0%, rgba(94,43,161,1) 46.03%, rgba(127,181,234,1) 100%);
+		overflow: hidden;
+		--web-view-name: 테스트-홈 – 1;
+		--web-view-id: -__1;
+		--web-scale-on-resize: true;
+		--web-enable-deep-linking: true;
+	}
+	#_48 {
+		mix-blend-mode: overlay;
+		position: absolute;
+		width: 1920px;
+		height: 984.999px;
+		left: 0px;
+		top: 0.001px;
+		overflow: visible;
+	}
+	#_4 {
+		fill: transparent;
+		stroke: rgba(255,255,255,1);
+		stroke-width: 0.5px;
+		stroke-linejoin: miter;
+		stroke-linecap: round;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	._4 {
+		overflow: visible;
+		position: absolute;
+		width: 72.707px;
+		height: 72.707px;
+		left: 336px;
+		top: 1054.25px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#_1 {
+		fill: rgba(255,255,255,1);
+	}
+	._1 {
+		mix-blend-mode: overlay;
+		overflow: visible;
+		position: absolute;
+		width: 1920px;
+		height: 571.448px;
+		left: -0.001px;
+		top: 508.551px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#_86 {
+		opacity: 0.53;
+		fill: rgba(192,168,211,1);
+	}
+	._86 {
+		mix-blend-mode: screen;
+		overflow: visible;
+		position: absolute;
+		width: 772.126px;
+		height: 865px;
+		left: 574px;
+		top: 0px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#_530 {
+		opacity: 0.4;
+		fill: rgba(21,5,43,1);
+	}
+	._530 {
+		mix-blend-mode: multiply;
+		position: absolute;
+		overflow: visible;
+		width: 1920px;
+		height: 1033px;
+		left: 0px;
+	}
+	#_482 {
+		fill: rgba(32,67,99,1);
+	}
+	._482 {
+		position: absolute;
+		overflow: visible;
+		width: 1920px;
+		height: 95px;
+		left: 0px;
+		top: 985px;
+	}
+	#_104 {
+		position: absolute;
+		width: 502px;
+		height: 195px;
+		left: 708px;
+		top: 437.5px;
+		overflow: visible;
+		z-index: 0;
+	}
+	#middle {
+		filter: blur(3px);
+		left: 0px;
+		top: 0px;
+		position: absolute;
+		overflow: visible;
+		width: 503px;
+		white-space: nowrap;
+		line-height: 108px;
+		margin-top: -21.5px;
+		text-align: center;
+		font-family: 'HSBombaram3_Regular';
+        src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10@1.1/HSBombaram3_Regular.woff') format('woff');
+		font-style: normal;
+		font-weight: normal;
+		font-size: 65px;
+		color: rgba(255,255,255,1);
+	}
+	#middle {
+		filter: blur(3px);
+		left: 0px;
+		top: 0px;
+		position: absolute;
+		overflow: visible;
+		width: 503px;
+		white-space: nowrap;
+		line-height: 108px;
+		margin-top: -21.5px;
+		text-align: center;
+		font-family: 'HSBombaram3_Regular';
+        src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10@1.1/HSBombaram3_Regular.woff') format('woff');
+		font-style: normal;
+		font-weight: normal;
+		font-size: 65px;
+		color: rgba(255,255,255,1);
+	}
+	#_106 {
+		position: absolute;
+		width: 466px;
+		height: 1px;
+		left: 727px;
+		top: 661.5px;
+		overflow: visible;
+	}
+	#_41 {
+		filter: blur(3px);
+		fill: transparent;
+		stroke: rgba(255,255,255,1);
+		stroke-width: 3px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	._41 {
+		overflow: visible;
+		position: absolute;
+		width: 483.5px;
+		height: 21px;
+		left: 0px;
+		top: 0px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#_40 {
+		fill: transparent;
+		stroke: rgba(255,255,255,1);
+		stroke-width: 1.5px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	._40 {
+		overflow: visible;
+		position: absolute;
+		width: 465.5px;
+		height: 1.5px;
+		left: 0.5px;
+		top: 0px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#_105 {
+		position: absolute;
+		width: 466px;
+		height: 1px;
+		left: 727px;
+		top: 418.5px;
+		overflow: visible;
+	}
+	#_41_ {
+		filter: blur(3px);
+		fill: transparent;
+		stroke: rgba(255,255,255,1);
+		stroke-width: 3px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	._41_ {
+		overflow: visible;
+		position: absolute;
+		width: 483.5px;
+		height: 21px;
+		left: 0px;
+		top: 0px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#_40_ba {
+		fill: transparent;
+		stroke: rgba(255,255,255,1);
+		stroke-width: 1.5px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	._40_ba {
+		overflow: visible;
+		position: absolute;
+		width: 465.5px;
+		height: 1.5px;
+		left: 0.5px;
+		top: 0px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#_3 {
+		fill: rgba(52,62,120,1);
+	}
+	._3 {
+		position: absolute;
+		overflow: visible;
+		width: 1920px;
+		height: 60px;
+		left: 0px;
+		top: 0px;
+	}
+	#_4_bc {
+		fill: rgba(165,171,203,1);
+	}
+	._4_bc {
+		position: absolute;
+		overflow: visible;
+		width: 1920px;
+		height: 60px;
+		left: 0px;
+		top: 60px;
+	}
+	/* # {
+		left: 140px;
+		top: 76px;
+		position: absolute;
+		overflow: visible;
+		width: 91px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: HSBomBaram 3.0;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 18px;
+		color: rgba(18,18,18,1);
+	} */
+	#ABOUT_ {
+		left: 294px;
+		top: 76px;
+		position: absolute;
+		overflow: visible;
+		width: 117px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: HSBomBaram 3.0;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 18px;
+		color: rgba(18,18,18,1);
+	}
+	#_bf {
+		left: 480px;
+		top: 76px;
+		position: absolute;
+		overflow: visible;
+		width: 55px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: HSBomBaram 3.0;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 18px;
+		color: rgba(18,18,18,1);
+	}
+	#_bg {
+		left: 604px;
+		top: 77px;
+		position: absolute;
+		overflow: visible;
+		width: 91px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: HSBomBaram 3.0;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 18px;
+		color: rgba(18,18,18,1);
+	}
+	#_bh {
+		left: 1573px;
+		top: 79px;
+		position: absolute;
+		overflow: visible;
+		width: 61px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: MARU Buri Beta;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 15px;
+		color: rgba(0,0,0,1);
+	}
+	#_bi {
+		left: 1695px;
+		top: 81px;
+		position: absolute;
+		overflow: visible;
+		width: 61px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: MARU Buri Beta;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 15px;
+		color: rgba(0,0,0,1);
+	}
+	#_1_bj {
+		fill: rgba(255,255,255,1);
+	}
+	._1_bj {
+		position: absolute;
+		overflow: visible;
+		width: 34px;
+		height: 34px;
+		left: 1520px;
+		top: 74px;
+	}
+	#__ {
+		filter: drop-shadow(0px 5px 9px rgba(0, 0, 0, 0.71));
+		left: 140px;
+		top: 8px;
+		position: absolute;
+		overflow: visible;
+		width: 107px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: HSBomBaram 3.0;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 30px;
+		color: rgba(255,255,255,1);
+	}
+	#_132 {
+		opacity: 0.82;
+		fill: rgba(255,255,255,1);
+	}
+	._132 {
+		position: absolute;
+		overflow: visible;
+		width: 214px;
+		height: 55px;
+		left: 853px;
+		top: 743px;
+	}
+	#start {
+		left: 896px;
+		top: 754px;
+		position: absolute;
+		overflow: visible;
+		width: 156px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: 'HSBombaram3_Regular';
+        src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10@1.1/HSBombaram3_Regular.woff') format('woff');
+		font-style: normal;
+		font-weight: normal;
+		font-size: 22px;
+		color: rgba(0,0,0,1); 
+	}
+
+    #start a {
+        text-align: center;
+        text-decoration: none; /* 링크의 밑줄 제거 */
+        color: inherit; /* 링크의 색상 제거 */
+      }
+
+ @font-face {
+    font-family: 'HSBombaram3_Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10@1.1/HSBombaram3_Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'MaruBuri-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10-21@1.0/MaruBuri-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+.mediaViewInfo {
+		--web-view-name: 테스트-홈 – 1;
+		--web-view-id: -__1;
+		--web-scale-on-resize: true;
+		--web-enable-deep-linking: true;
+	}
+	:root {
+		--web-view-ids: -__1;
+	}
+	* {
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+		border: none;
+	}
+	#-__1 {
+		position: absolute;
+		width: 1920px;
+		height: 1080px;
+		background: linear-gradient(180deg, rgba(25,45,96,1) 0%, rgba(94,43,161,1) 46.03%, rgba(127,181,234,1) 100%);
+		overflow: hidden;
+		--web-view-name: 테스트-홈 – 1;
+		--web-view-id: -__1;
+		--web-scale-on-resize: true;
+		--web-enable-deep-linking: true;
+	}
+	#_48 {
+		mix-blend-mode: overlay;
+		position: absolute;
+		width: 1920px;
+		height: 984.999px;
+		left: 0px;
+		top: 0.001px;
+		overflow: visible;
+	}
+	#_4 {
+		fill: transparent;
+		stroke: rgba(255,255,255,1);
+		stroke-width: 0.5px;
+		stroke-linejoin: miter;
+		stroke-linecap: round;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	._4 {
+		overflow: visible;
+		position: absolute;
+		width: 72.707px;
+		height: 72.707px;
+		left: 336px;
+		top: 1054.25px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#_1 {
+		fill: rgba(255,255,255,1);
+	}
+	._1 {
+		mix-blend-mode: overlay;
+		overflow: visible;
+		position: absolute;
+		width: 1920px;
+		height: 571.448px;
+		left: -0.001px;
+		top: 508.551px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#_86 {
+		opacity: 0.53;
+		fill: rgba(192,168,211,1);
+	}
+	._86 {
+		mix-blend-mode: screen;
+		overflow: visible;
+		position: absolute;
+		width: 772.126px;
+		height: 865px;
+		left: 574px;
+		top: 120px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#_530 {
+		opacity: 0.4;
+		fill: rgba(21,5,43,1);
+	}
+	._530 {
+		mix-blend-mode: multiply;
+		position: absolute;
+		overflow: visible;
+		width: 1920px;
+		height: 1033px;
+		left: 0px;
+		top: 13px;
+	}
+	#_482 {
+		fill: rgba(32,67,99,1);
+	}
+	._482 {
+		position: absolute;
+		overflow: visible;
+		width: 1920px;
+		height: 95px;
+		left: 0px;
+		top: 985px;
+	}
+	#_104 {
+		position: absolute;
+		width: 502px;
+		height: 195px;
+		left: 708px;
+		top: 437.5px;
+		overflow: visible;
+	}
+	#middle {
+		filter: blur(3px);
+		left: 0px;
+		top: 0px;
+		position: absolute;
+		overflow: visible;
+		width: 503px;
+		white-space: nowrap;
+		line-height: 108px;
+		margin-top: -21.5px;
+		text-align: center;
+		font-family: 'HSBombaram3_Regular';
+        src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10@1.1/HSBombaram3_Regular.woff') format('woff');
+		font-style: normal;
+		font-weight: normal;
+		font-size: 65px;
+		color: rgba(255,255,255,1);
+	}
+	#middle {
+		filter: blur(3px);
+		left: 0px;
+		top: 0px;
+		position: absolute;
+		overflow: visible;
+		width: 503px;
+		white-space: nowrap;
+		line-height: 108px;
+		margin-top: -21.5px;
+		text-align: center;
+		font-family: 'HSBombaram3_Regular';
+        src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10@1.1/HSBombaram3_Regular.woff') format('woff');
+		font-style: normal;
+		font-weight: normal;
+		font-size: 65px;
+		color: rgba(255,255,255,1);
+	}
+	#_106 {
+		position: absolute;
+		width: 466px;
+		height: 1px;
+		left: 727px;
+		top: 661.5px;
+		overflow: visible;
+	}
+	#_41 {
+		filter: blur(3px);
+		fill: transparent;
+		stroke: rgba(255,255,255,1);
+		stroke-width: 3px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	._41 {
+		overflow: visible;
+		position: absolute;
+		width: 483.5px;
+		height: 21px;
+		left: 0px;
+		top: 0px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#_40 {
+		fill: transparent;
+		stroke: rgba(255,255,255,1);
+		stroke-width: 1.5px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	._40 {
+		overflow: visible;
+		position: absolute;
+		width: 465.5px;
+		height: 1.5px;
+		left: 0.5px;
+		top: 0px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#_105 {
+		position: absolute;
+		width: 466px;
+		height: 1px;
+		left: 727px;
+		top: 418.5px;
+		overflow: visible;
+	}
+	#_41_ {
+		filter: blur(3px);
+		fill: transparent;
+		stroke: rgba(255,255,255,1);
+		stroke-width: 3px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	._41_ {
+		overflow: visible;
+		position: absolute;
+		width: 483.5px;
+		height: 21px;
+		left: 0px;
+		top: 0px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#_40_ba {
+		fill: transparent;
+		stroke: rgba(255,255,255,1);
+		stroke-width: 1.5px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	._40_ba {
+		overflow: visible;
+		position: absolute;
+		width: 465.5px;
+		height: 1.5px;
+		left: 0.5px;
+		top: 0px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#_3 {
+		fill: rgba(52,62,120,1);
+	}
+	._3 {
+		position: absolute;
+		overflow: visible;
+		width: 1920px;
+		height: 60px;
+		left: 0px;
+		top: 0px;
+	}
+	#_4_bc {
+		fill: rgba(165,171,203,1);
+	}
+	._4_bc {
+		position: absolute;
+		overflow: visible;
+		width: 1920px;
+		height: 60px;
+		left: 0px;
+		top: 60px;
+	}
+	/* # {
+		left: 140px;
+		top: 76px;
+		position: absolute;
+		overflow: visible;
+		width: 91px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: HSBomBaram 3.0;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 18px;
+		color: rgba(18,18,18,1);
+	} */
+	#ABOUT_ {
+		left: 294px;
+		top: 76px;
+		position: absolute;
+		overflow: visible;
+		width: 117px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: HSBomBaram 3.0;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 18px;
+		color: rgba(18,18,18,1);
+	}
+	#_bf {
+		left: 480px;
+		top: 76px;
+		position: absolute;
+		overflow: visible;
+		width: 55px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: HSBomBaram 3.0;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 18px;
+		color: rgba(18,18,18,1);
+	}
+	#_bg {
+		left: 604px;
+		top: 77px;
+		position: absolute;
+		overflow: visible;
+		width: 91px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: HSBomBaram 3.0;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 18px;
+		color: rgba(18,18,18,1);
+	}
+	#_bh {
+		left: 1573px;
+		top: 79px;
+		position: absolute;
+		overflow: visible;
+		width: 61px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: MARU Buri Beta;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 15px;
+		color: rgba(0,0,0,1);
+	}
+	#_bi {
+		left: 1695px;
+		top: 81px;
+		position: absolute;
+		overflow: visible;
+		width: 61px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: MARU Buri Beta;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 15px;
+		color: rgba(0,0,0,1);
+	}
+	#_1_bj {
+		fill: rgba(255,255,255,1);
+	}
+	._1_bj {
+		position: absolute;
+		overflow: visible;
+		width: 34px;
+		height: 34px;
+		left: 1520px;
+		top: 74px;
+	}
+	#__ {
+		filter: drop-shadow(0px 5px 9px rgba(0, 0, 0, 0.71));
+		left: 140px;
+		top: 8px;
+		position: absolute;
+		overflow: visible;
+		width: 107px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: HSBomBaram 3.0;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 30px;
+		color: rgba(255,255,255,1);
+	}
+	#_132 {
+		opacity: 0.82;
+		fill: rgba(255,255,255,1);
+	}
+	._132 {
+		position: absolute;
+		overflow: visible;
+		width: 214px;
+		height: 55px;
+		left: 853px;
+		top: 743px;
+	}
+	#start {
+		left: 896px;
+		top: 754px;
+		position: absolute;
+		overflow: visible;
+		width: 156px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: 'HSBombaram3_Regular';
+        src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10@1.1/HSBombaram3_Regular.woff') format('woff');
+		font-style: normal;
+		font-weight: normal;
+		font-size: 22px;
+		color: rgba(0,0,0,1); 
+	}
+
+    #start a {
+        text-align: center;
+        text-decoration: none; /* 링크의 밑줄 제거 */
+        color: inherit; /* 링크의 색상 제거 */
+      }
+
+	 /* 공통 nav 바 */
+@font-face {
+    font-family: 'HSBombaram3_Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10@1.1/HSBombaram3_Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+	}
+
+	@font-face {
+    font-family: 'MaruBuri-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10-21@1.0/MaruBuri-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+	}	
+
+
+#mainlogo {
+    filter: drop-shadow(0px 5px 9px rgba(0, 0, 0, 0.71));
+    left: 140px;
+    top: 3px;
+    position: relative;
+    overflow: visible;
+    width: 107px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: 'HSBombaram3_Regular';
+    text-decoration:none;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    color: rgba(255,255,255,1);
+    z-index: 1;
+}
+
+
+#logo {
+    background-color: rgba(52,62,120,1);
+    z-index: 1;
+	width:1920px
+}
+.mainnamebackground {
+    position: absolute;
+    overflow: visible;
+    width: 1920px;
+    height: 60px;
+    left: 0px;
+    top: 0px;
+    z-index: 1;
+}
+
+
+#navbackground {
+    fill: rgba(165,171,203,1);
+    z-index: 1;
+	}
+.navbackground {
+    position: absolute;
+    overflow: visible;
+    width: 1920px;
+    height: 60px;
+    left: 0px;
+    top: 60px;
+    z-index: 1;
+}
+
+#nav1 {
+    left: 140px;
+    top: 7px;
+    position: absolute;
+    overflow: visible;
+    width: 117px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: 'HSBombaram3_Regular';
+    text-decoration:none;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    color: rgba(18,18,18,1);
+    z-index: 1;
+}
+
+#nav2 {
+    left: 334px;
+    top: 7px;
+    position: absolute;
+    overflow: visible;
+    width: 91px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: 'HSBombaram3_Regular';
+    text-decoration:none;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    color: rgba(18,18,18,1);
+    z-index: 1;
+}
+
+#nav3 {
+    left: 496px;
+    top: 7px;
+    position: absolute;
+    overflow: visible;
+    width: 91px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: 'HSBombaram3_Regular';
+    text-decoration:none;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    color: rgba(18,18,18,1);
+    z-index: 1;
+}
+#nav4 {
+    left: 662px;
+    top: 7px;
+    position: absolute;
+    overflow: visible;
+    width: 91px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: 'HSBombaram3_Regular';
+    text-decoration:none;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    color: rgba(18,18,18,1);
+    z-index: 1;
+}
+
+#nickname {
+    left: 1573px;
+    top: 79px;
+    position: absolute;
+    overflow: visible;
+    width: 61px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: 'MaruBuri-Regular';
+    text-decoration:none ;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    color: rgba(0,0,0,1);
+    z-index: 1;
+}
+#logout {
+    left: 1695px;
+    top: 81px;
+    position: absolute;
+    overflow: visible;
+    width: 61px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: 'MaruBuri-Regular';
+    text-decoration:none ;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    color: rgba(0,0,0,1);
+}
+
+#myimage {
+    fill: rgba(255,255,255,1);
+    z-index: 1;
+}
+.myimage {
+    position: absolute;
+    overflow: visible;
+    width: 34px;
+    height: 34px;
+    left: 1520px;
+    top: 74px;
+    z-index: 1;
+}
+
+/* 공통 nav 바 끝 */
+
+	.bg-light {
+    background-color: rgba(165,171,203,1);
+    z-index: 1;
+}
+
+#navlogin{
+	position: relative;
+	left: 1573px;
+    top: 1px;
+	font-family: 'MaruBuri-Regular';
+	color: rgba(0,0,0,1);
+}
+
+#nav5{
+	position: relative;
+	left: 1500px;
+    top: 1px;
+	font-family: 'MaruBuri-Regular';
+	color: rgba(0,0,0,1);
+}
+
+#img444{
+	position: relative;
+	left: 1500px;
+    top: 1px;
+	
+}
+
+.navbar{
+	width:1920px
+}
+
+

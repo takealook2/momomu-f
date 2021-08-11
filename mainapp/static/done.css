@@ -1,0 +1,347 @@
+@font-face {
+    font-family: 'HSBombaram3_Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10@1.1/HSBombaram3_Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+   }
+
+@font-face {
+    font-family: 'MaruBuri-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10-21@1.0/MaruBuri-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+   }
+
+.mediaViewInfo {
+    --web-view-name: 회원가입;
+    --web-view-id: ;
+    --web-scale-on-resize: true;
+    --web-enable-deep-linking: true;
+}
+:root {
+    --web-view-ids: ;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+}
+#bg{
+    position: absolute;
+    width: 1920px;
+    height: 1080px;
+    background: linear-gradient(180deg, rgba(5,7,31,1) 0%, rgba(24,52,109,1) 40.72%, rgba(75,151,186,1) 100%, rgba(70,26,109,1) 100%);
+    overflow: hidden;
+    --web-view-name: 회원가입;
+    --web-view-id: ;
+    --web-scale-on-resize: true;
+    --web-enable-deep-linking: true;
+}
+#_17 {
+    mix-blend-mode: multiply;
+    position: absolute;
+    width: 2520px;
+    height: 934.001px;
+    left: -261px;
+    top: 149px;
+    overflow: visible;
+}
+#_16 {
+    opacity: 0.49;
+    mix-blend-mode: lighten;
+    position: absolute;
+    width: 1920px;
+    height: 1080px;
+    left: 0px;
+    top: 0px;
+    overflow: visible;
+}
+#_1 {
+    fill: transparent;
+    stroke: rgba(255,255,255,1);
+    stroke-width: 0.5px;
+    stroke-linejoin: miter;
+    stroke-linecap: round;
+    stroke-miterlimit: 4;
+    shape-rendering: auto;
+}
+._1 {
+    overflow: visible;
+    position: absolute;
+    width: 285.707px;
+    height: 285.707px;
+    left: 459.5px;
+    top: 200.5px;
+    transform: matrix(1,0,0,1,0,0);
+}
+#_5 {
+    fill: transparent;
+    stroke: rgba(255,255,255,1);
+    stroke-width: 0.5px;
+    stroke-linejoin: miter;
+    stroke-linecap: round;
+    stroke-miterlimit: 4;
+    shape-rendering: auto;
+}
+._5 {
+    overflow: visible;
+    position: absolute;
+    width: 285.707px;
+    height: 285.707px;
+    left: 1372.5px;
+    top: 178.25px;
+    transform: matrix(1,0,0,1,0,0);
+}
+#_7 {
+    fill: transparent;
+    stroke: rgba(255,255,255,1);
+    stroke-width: 0.5px;
+    stroke-linejoin: miter;
+    stroke-linecap: round;
+    stroke-miterlimit: 4;
+    shape-rendering: auto;
+}
+._7 {
+    overflow: visible;
+    position: absolute;
+    width: 285.707px;
+    height: 285.707px;
+    left: 1557.5px;
+    top: 590.5px;
+    transform: matrix(1,0,0,1,0,0);
+}
+#_2 {
+    fill: transparent;
+    stroke: rgba(255,255,255,1);
+    stroke-width: 0.5px;
+    stroke-linejoin: miter;
+    stroke-linecap: round;
+    stroke-miterlimit: 4;
+    shape-rendering: auto;
+}
+._2 {
+    overflow: visible;
+    position: absolute;
+    width: 72.707px;
+    height: 72.707px;
+    left: 357px;
+    top: 518.5px;
+    transform: matrix(1,0,0,1,0,0);
+}
+#_6 {
+    fill: transparent;
+    stroke: rgba(255,255,255,1);
+    stroke-width: 0.5px;
+    stroke-linejoin: miter;
+    stroke-linecap: round;
+    stroke-miterlimit: 4;
+    shape-rendering: auto;
+}
+._6 {
+    overflow: visible;
+    position: absolute;
+    width: 107.207px;
+    height: 106.957px;
+    left: 1235.5px;
+    top: 496.25px;
+    transform: matrix(1,0,0,1,0,0);
+}
+#_9 {
+    fill: transparent;
+    stroke: rgba(255,255,255,1);
+    stroke-width: 0.5px;
+    stroke-linejoin: miter;
+    stroke-linecap: round;
+    stroke-miterlimit: 4;
+    shape-rendering: auto;
+}
+._9 {
+    overflow: visible;
+    position: absolute;
+    width: 52.707px;
+    height: 52.707px;
+    left: 1158px;
+    top: 630px;
+    transform: matrix(1,0,0,1,0,0);
+}
+#_8 {
+    fill: transparent;
+    stroke: rgba(255,255,255,1);
+    stroke-width: 0.5px;
+    stroke-linejoin: miter;
+    stroke-linecap: round;
+    stroke-miterlimit: 4;
+    shape-rendering: auto;
+}
+._8 {
+    overflow: visible;
+    position: absolute;
+    width: 72.707px;
+    height: 72.707px;
+    left: 1455px;
+    top: 908.5px;
+    transform: matrix(1,0,0,1,0,0);
+}
+#_10 {
+    fill: transparent;
+    stroke: rgba(255,255,255,1);
+    stroke-width: 1px;
+    stroke-linejoin: miter;
+    stroke-linecap: butt;
+    stroke-miterlimit: 4;
+    shape-rendering: auto;
+}
+._10 {
+    overflow: visible;
+    position: absolute;
+    width: 286px;
+    height: 1px;
+    left: 817.5px;
+    top: 347px;
+    transform: matrix(1,0,0,1,0,0);
+}
+#_11 {
+    fill: transparent;
+    stroke: rgba(255,255,255,1);
+    stroke-width: 1px;
+    stroke-linejoin: miter;
+    stroke-linecap: butt;
+    stroke-miterlimit: 4;
+    shape-rendering: auto;
+}
+._11 {
+    overflow: visible;
+    position: absolute;
+    width: 286px;
+    height: 1px;
+    left: 817.5px;
+    top: 380px;
+    transform: matrix(1,0,0,1,0,0);
+}
+#__ {
+    left: 880px;
+    top: 351px;
+    position: absolute;
+    overflow: visible;
+    width: 162px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: MaruBuri-Regular;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    color: rgba(255,255,255,1);
+}
+#_1_bc {
+    position: absolute;
+    width: 1920px;
+    height: 1083.001px;
+    left: 0px;
+    top: 0px;
+    overflow: visible;
+}
+#___bd {
+    filter: drop-shadow(0px 5px 9px rgba(0, 0, 0, 0.71));
+    left: 812px;
+    top: 246px;
+    position: absolute;
+    overflow: visible;
+    width: 298px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: HSBombaram3_Regular;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 88px;
+    color: rgba(255,255,255,1);
+}
+#_5_be {
+    fill: rgba(237,226,202,1);
+}
+._5_be {
+    overflow: visible;
+    position: absolute;
+    width: 564px;
+    height: 390px;
+    left: 678px;
+    top: 510px;
+    transform: matrix(1,0,0,1,0,0);
+}
+#_ {
+    left: 848px;
+    top: 571px;
+    position: absolute;
+    overflow: visible;
+    width: 218px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: HSBombaram3_Regular;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 28px;
+    color: rgba(59,58,58,1);
+}
+#______ {
+    left: 833px;
+    top: 678px;
+    position: absolute;
+    overflow: visible;
+    width: 247px;
+    white-space: nowrap;
+    line-height: 47px;
+    margin-top: -13px;
+    text-align: center;
+    font-family: MaruBuri-Regular;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 21px;
+    color: rgba(59,58,58,1);
+}
+#_42 {
+    fill: transparent;
+    stroke: rgba(71,71,71,1);
+    stroke-width: 1px;
+    stroke-linejoin: miter;
+    stroke-linecap: butt;
+    stroke-miterlimit: 4;
+    shape-rendering: auto;
+}
+._42 {
+    overflow: visible;
+    position: absolute;
+    width: 530.739px;
+    height: 1px;
+    left: 695.109px;
+    top: 629.398px;
+    transform: matrix(1,0,0,1,0,0);
+}
+#_164 {
+    fill: rgba(53,109,152,1);
+}
+._164 {
+    position: absolute;
+    overflow: visible;
+    width: 113px;
+    height: 40px;
+    left: 904px;
+    top: 819px;
+    z-index: 1;
+}
+.btn3{
+    left: 933px;
+    top: 828px;
+    position: absolute;
+    overflow: visible;
+    width: 100px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: MaruBuri-Regular;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    color: rgba(255,255,255,1);
+    cursor:pointer;
+    background:transparent;
+    z-index: 2;
+}

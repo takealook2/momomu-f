@@ -1,0 +1,160 @@
+/* 공통 nav 바 */
+@font-face {
+    font-family: 'HSBombaram3_Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10@1.1/HSBombaram3_Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+	}
+
+@font-face {
+    font-family: 'MaruBuri-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10-21@1.0/MaruBuri-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+	}	
+
+#mainnamebackground {
+    fill: rgba(52,62,120,1);
+}
+.mainnamebackground {
+    position: absolute;
+    overflow: visible;
+    width: 1920px;
+    height: 60px;
+    left: 0px;
+    top: 0px;
+}
+#navbackground {
+    fill: rgba(165,171,203,1);
+}
+.navbackground {
+    position: absolute;
+    overflow: visible;
+    width: 1920px;
+    height: 60px;
+    left: 0px;
+    top: 60px;
+}
+
+#nav1 {
+    left: 140px;
+    top: 77px;
+    position: absolute;
+    overflow: visible;
+    width: 117px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: 'HSBombaram3_Regular';
+    text-decoration:none;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    color: rgba(18,18,18,1);
+}
+
+#nav2 {
+    left: 334px;
+    top: 77px;
+    position: absolute;
+    overflow: visible;
+    width: 91px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: 'HSBombaram3_Regular';
+    text-decoration:none;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    color: rgba(18,18,18,1);
+}
+
+#nav3 {
+    left: 496px;
+    top: 77px;
+    position: absolute;
+    overflow: visible;
+    width: 91px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: 'HSBombaram3_Regular';
+    text-decoration:none;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    color: rgba(18,18,18,1);
+}
+#nav4 {
+    left: 662px;
+    top: 77px;
+    position: absolute;
+    overflow: visible;
+    width: 91px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: 'HSBombaram3_Regular';
+    text-decoration:none;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    color: rgba(18,18,18,1);
+}
+
+#nickname {
+    left: 1573px;
+    top: 79px;
+    position: absolute;
+    overflow: visible;
+    width: 61px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: 'MaruBuri-Regular';
+    text-decoration:none ;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    color: rgba(0,0,0,1);
+}
+#logout {
+    left: 1695px;
+    top: 81px;
+    position: absolute;
+    overflow: visible;
+    width: 61px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: 'MaruBuri-Regular';
+    text-decoration:none ;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    color: rgba(0,0,0,1);
+}
+
+#myimage {
+    fill: rgba(255,255,255,1);
+}
+.myimage {
+    position: absolute;
+    overflow: visible;
+    width: 34px;
+    height: 34px;
+    left: 1520px;
+    top: 74px;
+}
+#mainname {
+    filter: drop-shadow(0px 5px 9px rgba(0, 0, 0, 0.71));
+    left: 140px;
+    top: 8px;
+    position: absolute;
+    overflow: visible;
+    width: 107px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: 'HSBombaram3_Regular';
+    text-decoration:none;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    color: rgba(255,255,255,1);
+}
+/* 공통 nav 바 끝 */

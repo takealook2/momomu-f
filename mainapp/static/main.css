@@ -1,0 +1,514 @@
+/* 공통 nav 바 */
+@font-face {
+    font-family: 'HSBombaram3_Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10@1.1/HSBombaram3_Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+	}
+
+	@font-face {
+    font-family: 'MaruBuri-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10-21@1.0/MaruBuri-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+	}	
+
+
+#mainlogo {
+    filter: drop-shadow(0px 5px 9px rgba(0, 0, 0, 0.71));
+    left: 140px;
+    top: 3px;
+    position: relative;
+    overflow: visible;
+    width: 107px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: 'HSBombaram3_Regular';
+    text-decoration:none;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    color: rgba(255,255,255,1);
+    z-index: 1;
+}
+
+
+#logo {
+    background-color: rgba(52,62,120,1);
+    z-index: 1;
+	width:1920px
+}
+.mainnamebackground {
+    position: absolute;
+    overflow: visible;
+    width: 1920px;
+    height: 60px;
+    left: 0px;
+    top: 0px;
+    z-index: 1;
+}
+
+
+#navbackground {
+    fill: rgba(165,171,203,1);
+    z-index: 1;
+	}
+.navbackground {
+    position: absolute;
+    overflow: visible;
+    width: 1920px;
+    height: 60px;
+    left: 0px;
+    top: 60px;
+    z-index: 1;
+}
+
+#nav1 {
+    left: 140px;
+    top: 7px;
+    position: absolute;
+    overflow: visible;
+    width: 117px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: 'HSBombaram3_Regular';
+    text-decoration:none;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    color: rgba(18,18,18,1);
+    z-index: 1;
+}
+
+#nav2 {
+    left: 334px;
+    top: 7px;
+    position: absolute;
+    overflow: visible;
+    width: 91px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: 'HSBombaram3_Regular';
+    text-decoration:none;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    color: rgba(18,18,18,1);
+    z-index: 1;
+}
+
+#nav3 {
+    left: 496px;
+    top: 7px;
+    position: absolute;
+    overflow: visible;
+    width: 91px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: 'HSBombaram3_Regular';
+    text-decoration:none;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    color: rgba(18,18,18,1);
+    z-index: 1;
+}
+#nav4 {
+    left: 662px;
+    top: 7px;
+    position: absolute;
+    overflow: visible;
+    width: 91px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: 'HSBombaram3_Regular';
+    text-decoration:none;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    color: rgba(18,18,18,1);
+    z-index: 1;
+}
+
+#nickname {
+    left: 1573px;
+    top: 79px;
+    position: absolute;
+    overflow: visible;
+    width: 61px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: 'MaruBuri-Regular';
+    text-decoration:none ;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    color: rgba(0,0,0,1);
+    z-index: 1;
+}
+#logout {
+    left: 1695px;
+    top: 81px;
+    position: absolute;
+    overflow: visible;
+    width: 61px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: 'MaruBuri-Regular';
+    text-decoration:none ;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    color: rgba(0,0,0,1);
+}
+
+#myimage {
+    fill: rgba(255,255,255,1);
+    z-index: 1;
+}
+.myimage {
+    position: absolute;
+    overflow: visible;
+    width: 34px;
+    height: 34px;
+    left: 1520px;
+    top: 74px;
+    z-index: 1;
+}
+
+/* 공통 nav 바 끝 */
+
+.bg-light {
+    background-color: rgba(165,171,203,1);
+    z-index: 1;
+}
+
+#navlogin{
+	position: relative;
+	left: 1573px;
+    top: 1px;
+	font-family: 'MaruBuri-Regular';
+	color: rgba(0,0,0,1);
+}
+
+#nav5{
+	position: relative;
+	left: 1500px;
+    top: 1px;
+	font-family: 'MaruBuri-Regular';
+	color: rgba(0,0,0,1);
+}
+
+#img444{
+	position: relative;
+	left: 1500px;
+    top: 1px;
+	
+}
+
+.navbar{
+	width:1920px
+}
+
+.btn-secondary {
+    background-color: rgb(125,122,191);
+    border-color: rgb(125,122,191);
+    }
+
+    .btn:hover {
+    color: white;
+    background-color: rgb(165,171,203);
+    border-color: rgb(165,171,203);
+    }
+/*공통 nav바 끝*/
+
+
+/*main.html css*/
+
+
+
+	.mediaViewInfo {
+		--web-view-name: 모두 모여 뮤지컬;
+		--web-view-id: __1;
+		--web-scale-on-resize: true;
+		--web-enable-deep-linking: true;
+	}
+	:root {
+		--web-view-ids: __1;
+	}
+	* {
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+		border: none;
+	}
+	#__1 {
+		position: absolute;
+		width: 1920px;
+		height: 1654px;
+		background: linear-gradient(179deg, rgba(0,24,65,1) 0%, rgba(75,151,186,1) 54.48%, rgba(106,20,151,1) 88.03%, rgba(57,0,113,1) 100%);
+		overflow: hidden;
+		--web-view-name: 메인 – 1;
+		--web-view-id: __1;
+		--web-scale-on-resize: true;
+		--web-enable-deep-linking: true;
+	}
+	#_21 {
+		mix-blend-mode: soft-light;
+		position: absolute;
+		width: 2072.001px;
+		height: 1349px;
+		left: -119px;
+		top: 545.001px;
+		overflow: visible;
+	}
+	#_19 {
+		mix-blend-mode: soft-light;
+		filter: blur(4px);
+		position: absolute;
+		width: 1920px;
+		height: 1200.001px;
+		left: 0px;
+		top: 454px;
+		overflow: visible;
+	}
+	#_22 {
+		opacity: 0.49;
+		mix-blend-mode: lighten;
+		position: absolute;
+		width: 1920.001px;
+		height: 1654.001px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+
+
+	#__ba {
+		filter: drop-shadow(0px 5px 9px rgba(0, 0, 0, 0.71));
+		left: 278px;
+		top: 858px;
+		position: absolute;
+		overflow: visible;
+		width: 183px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: 'HSBombaram3_Regular';
+    	text-decoration:none;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 25px;
+		color: rgba(255,255,255,1);
+	}
+	#_1_ {
+		position: absolute;
+		width: 260px;
+		height: 358px;
+		left: 276px;
+		top: 951px;
+		overflow: visible;
+	}
+	#_4_ba {
+		opacity: 0.64;
+		fill: rgba(214,188,126,1);
+		z-index: 1;
+	}
+	._4_ba {
+		overflow: visible;
+		position: absolute;
+		width: 260px;
+		height: 358px;
+		left: 0px;
+		top: 0px;
+		transform: matrix(1,0,0,1,0,0);
+		z-index: 1;
+	}
+	#_150{
+		z-index: 5;
+	}
+	._150 {
+		position: absolute;
+		overflow: visible;
+		width: 230px;
+		height: 323px;
+		left: 15px;
+		top: 18px;
+		z-index: 5;
+	}
+	#_1_bc {
+		position: absolute;
+		width: 260px;
+		height: 358px;
+		left: 553px;
+		top: 951px;
+		overflow: visible;
+	}
+	#_4_bd {
+		opacity: 0.64;
+		fill: rgba(214,188,126,1);
+	}
+	._4_bd {
+		overflow: visible;
+		position: absolute;
+		width: 260px;
+		height: 358px;
+		left: 0px;
+		top: 0px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#_150_be {
+		fill: rgba(197,197,197,1);
+	}
+	._150_be {
+		position: absolute;
+		overflow: visible;
+		width: 230px;
+		height: 323px;
+		left: 15px;
+		top: 18px;
+	}
+	#_1_bf {
+		position: absolute;
+		width: 260px;
+		height: 358px;
+		left: 830px;
+		top: 951px;
+		overflow: visible;
+	}
+	#_4_bg {
+		opacity: 0.64;
+		fill: rgba(214,188,126,1);
+	}
+	._4_bg {
+		overflow: visible;
+		position: absolute;
+		width: 260px;
+		height: 358px;
+		left: 0px;
+		top: 0px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#_150_bh {
+		fill: rgba(197,197,197,1);
+	}
+	._150_bh {
+		position: absolute;
+		overflow: visible;
+		width: 230px;
+		height: 323px;
+		left: 15px;
+		top: 18px;
+	}
+	#_1_bi {
+		position: absolute;
+		width: 260px;
+		height: 358px;
+		left: 1107px;
+		top: 951px;
+		overflow: visible;
+	}
+	#_4_bj {
+		opacity: 0.64;
+		fill: rgba(214,188,126,1);
+	}
+	._4_bj {
+		overflow: visible;
+		position: absolute;
+		width: 260px;
+		height: 358px;
+		left: 0px;
+		top: 0px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#_150_bk {
+		fill: rgba(197,197,197,1);
+	}
+	._150_bk {
+		position: absolute;
+		overflow: visible;
+		width: 230px;
+		height: 323px;
+		left: 15px;
+		top: 18px;
+	}
+	#_1_bl {
+		position: absolute;
+		width: 260px;
+		height: 358px;
+		left: 1384px;
+		top: 951px;
+		overflow: visible;
+	}
+
+	#swiper-container {
+		fill: rgba(234,234,234,1);
+	}
+	.swiper-container {
+		position: absolute;
+		overflow: visible;
+		width: 1920px;
+		height: 636px;
+		left: 0px;
+		top: 120px;
+	}
+	#_4_bm {
+		opacity: 0.64;
+		fill: rgba(214,188,126,1);
+	}
+	._4_bm {
+		overflow: visible;
+		position: absolute;
+		width: 260px;
+		height: 358px;
+		left: 0px;
+		top: 0px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#_150_bn {
+		fill: rgba(197,197,197,1);
+	}
+	._150_bn {
+		position: absolute;
+		overflow: visible;
+		width: 230px;
+		height: 323px;
+		left: 15px;
+		top: 18px;
+	}
+	#_168 {
+		fill: rgba(32,67,99,1);
+	}
+	._168 {
+		position: absolute;
+		overflow: visible;
+		width: 1920px;
+		height: 95px;
+		left: 0px;
+		top: 1559px;
+	}
+
+	#_550_ {
+		fill: url(#_550_);
+	}
+	._550_ {
+		mix-blend-mode: darken;
+		position: absolute;
+		overflow: visible;
+		width: 1920px;
+		height: 822px;
+		left: 0px;
+		top: 737px;
+	}
+	#_551 {
+		opacity: 0.28;
+		fill: rgba(93,93,145,1);
+	}
+	._551 {
+		position: absolute;
+		overflow: visible;
+		width: 1920px;
+		height: 822px;
+		left: 0px;
+		top: 737px;
+	}
+

@@ -1,0 +1,1373 @@
+@font-face {
+    font-family: 'HSBombaram3_Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10@1.1/HSBombaram3_Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+   }
+
+@font-face {
+    font-family: 'MaruBuri-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10-21@1.0/MaruBuri-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+   }   
+.mediaViewInfo {
+    --web-view-name: 자유게시판;
+    --web-view-id: ;
+    --web-scale-on-resize: true;
+    --web-enable-deep-linking: true;
+}
+:root {
+    --web-view-ids: ;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+}
+#ss {
+    position: absolute;
+    width: 1920px;
+    height: 2139px;
+    background: linear-gradient(180.6deg, rgba(161,133,183,1) 0%, rgba(59,20,111,1) 47.86%, rgba(68,90,157,1) 68.82%, rgba(75,151,186,1) 100%, rgba(57,0,113,1) 100%);
+    overflow: hidden;
+    --web-view-name: 자유게시판;
+    --web-view-id: ;
+    --web-scale-on-resize: true;
+    --web-enable-deep-linking: true;
+}
+#_43 {
+    mix-blend-mode: multiply;
+    position: absolute;
+    width: 2029.999px;
+    height: 1788px;
+    left: -109.999px;
+    top: 167px;
+    overflow: visible;
+}
+#_44 {
+    opacity: 0.49;
+    mix-blend-mode: lighten;
+    position: absolute;
+    width: 1920.001px;
+    height: 2072.001px;
+    left: -0.001px;
+    top: 0px;
+    overflow: visible;
+}
+#_3 {
+    fill: rgba(52,62,120,1);
+}
+._3 {
+    position: absolute;
+    overflow: visible;
+    width: 1920px;
+    height: 60px;
+    left: 0px;
+    top: 0px;
+}
+#_4 {
+    fill: rgba(165,171,203,1);
+}
+._4 {
+    position: absolute;
+    overflow: visible;
+    width: 1920px;
+    height: 60px;
+    left: 0px;
+    top: 60px;
+}
+#_ {
+    left: 1573px;
+    top: 79px;
+    position: absolute;
+    overflow: visible;
+    width: 61px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: 'MaruBuri-Regular';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    color: rgba(0,0,0,1);
+}
+#_ba {
+    left: 1695px;
+    top: 81px;
+    position: absolute;
+    overflow: visible;
+    width: 61px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: 'MaruBuri-Regular';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    color: rgba(0,0,0,1);
+}
+#_1 {
+    fill: rgba(255,255,255,1);
+}
+._1 {
+    position: absolute;
+    overflow: visible;
+    width: 34px;
+    height: 34px;
+    left: 1520px;
+    top: 74px;
+}
+#__ {
+    filter: drop-shadow(0px 5px 9px rgba(0, 0, 0, 0.71));
+    left: 140px;
+    top: 8px;
+    position: absolute;
+    overflow: visible;
+    width: 107px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: 'HSBombaram3_Regular';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    color: rgba(255,255,255,1);
+}
+
+#_168 {
+    fill: rgba(32,67,99,1);
+}
+._168 {
+    position: absolute;
+    overflow: visible;
+    width: 1920px;
+    height: 95px;
+    left: 0px;
+    top: 2044px;
+}
+#pngegg_9 {
+    opacity: 0.79;
+    mix-blend-mode: hard-light;
+    position: absolute;
+    width: 1690.466px;
+    height: 1670.331px;
+    left: 112.883px;
+    top: 290.272px;
+    overflow: visible;
+}
+#Record_of_Musicals {
+    filter: drop-shadow(0px 5px 9px rgba(0, 0, 0, 0.71));
+    left: 810px;
+    top: 207px;
+    position: absolute;
+    overflow: visible;
+    width: 291px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: 'HSBombaram3_Regular';
+    font-size: 35px;
+    color: rgba(255,255,255,1);
+}
+#_1_bj {
+    opacity: 0.7;
+    fill: url(#_1_bj);
+}
+._1_bj {
+    overflow: visible;
+    position: absolute;
+    width: 389px;
+    height: 690.359px;
+    left: 982.912px;
+    top: 379.01px;
+    transform: matrix(1,0,0,1,0,0);
+}
+#TODAY {
+    left: 1150.913px;
+    top: 416.689px;
+    position: absolute;
+    overflow: visible;
+    width: 67px;
+    white-space: nowrap;
+    text-align: center;
+    font-family: 'HSBombaram3_Regular';
+    font-size: 22px;
+    color: rgba(255,250,250,1);
+}
+#TodayInfo {
+    left: 1130.913px;
+    top: 457.189px;
+    position: absolute;
+    overflow: visible;
+    width: 112px;
+    white-space: nowrap;
+    text-align: center;
+    font-family: 'HSBombaram3_Regular';
+    font-size: 18px;
+    color: rgba(255,250,250,1);
+}
+#ticket_inner {
+    left: 1055.662px;
+    top: 832.189px;
+    position: absolute;
+    overflow: visible;
+    width: 64px;
+    white-space: nowrap;
+    line-height: 46px;
+    margin-top: -17px;
+    text-align: left;
+    font-family: 'HSBombaram3_Regular';
+    font-size: 15px;
+    color: rgba(0,0,0,1);
+}
+#ticket_save {
+    fill: rgba(165,171,203,1);
+}
+.ticket_save {
+    position: absolute;
+    overflow: visible;
+    width: 74px;
+    height: 43px;
+    top: -420px;
+    left: 220px;
+}
+#ticket_save_txt
+{
+    position: absolute;
+    top: -413px;
+    left: 222px;
+    width: 68px;
+    white-space: nowrap;
+    text-align: center;
+    font-family: 'HSBombaram3_Regular';
+    font-size: 17px;
+    color: rgba(32,67,99,1);
+}
+#ticket_delete {
+    fill: rgba(165,171,203,1);
+}
+.ticket_delete {
+    position: absolute;
+    overflow: visible;
+    width: 74px;
+    height: 43px;
+    top: -370px;
+    left: 220px;
+}
+#ticket_delete_txt
+{
+    position: absolute;
+    top: -362px;
+    left: 222px;
+    width: 68px;
+    white-space: nowrap;
+    text-align: center;
+    font-family: 'HSBombaram3_Regular';
+    font-size: 17px;
+    color: rgba(32,67,99,1);
+}
+#star
+{
+    position: absolute;
+    top: 195px;
+    left: 40px;
+}
+input
+{
+    BORDER-BOTTOM: rgba(255, 255, 255, 0.24) 1px solid;
+    BORDER-LEFT: medium none;
+    BORDER-RIGHT: medium none;
+    BORDER-TOP: medium none;
+    FONT-SIZE: 12pt;
+    font-family: 'MaruBuri-Regular';
+    background-color: #11ffee00;
+}
+#_25 {
+    fill: transparent;
+    stroke: rgba(154,151,151,1);
+    stroke-width: 2px;
+    stroke-linejoin: miter;
+    stroke-linecap: butt;
+    stroke-dasharray: 3;
+    stroke-dashoffset: 0;
+    stroke-miterlimit: 4;
+    shape-rendering: auto;
+}
+._25 {
+    overflow: visible;
+    position: absolute;
+    width: 389px;
+    height: 2px;
+    left: 982.912px;
+    top: 498.189px;
+    transform: matrix(1,0,0,1,0,0);
+}
+#_27 {
+    fill: transparent;
+    stroke: rgba(154,151,151,1);
+    stroke-width: 2px;
+    stroke-linejoin: miter;
+    stroke-linecap: butt;
+    stroke-dasharray: 3;
+    stroke-dashoffset: 0;
+    stroke-miterlimit: 4;
+    shape-rendering: auto;
+}
+._27 {
+    overflow: visible;
+    position: absolute;
+    width: 389px;
+    height: 2px;
+    left: 982.912px;
+    top: 993.189px;
+    transform: matrix(1,0,0,1,0,0);
+}
+
+#_418 {
+    fill: rgba(65,76,146,1);
+}
+._418 {
+    position: absolute;
+    overflow: visible;
+    width: 1399px;
+    height: 4px;
+    left: 278px;
+    top: 1165px;
+}
+#post_base {
+    fill: rgba(255,255,255,1);
+}
+.post_base {
+    overflow: visible;
+    position: absolute;
+    width: 1517px;
+    height: 674px;
+    left: 207px;
+    top: 1199px;
+    transform: matrix(1,0,0,1,0,0);
+}
+/* 이 부분이 문제인 것 같습니다 (내가쓴글) */
+.mypage_inner
+{   
+    position: absolute;
+    top: 1300px;
+    left: 300px;
+    z-index: 10;
+    BORDER-BOTTOM: rgb(0, 0, 0) 1px solid;
+    BORDER-LEFT: medium none;
+    BORDER-RIGHT: medium none;
+    BORDER-TOP: medium none;
+    FONT-SIZE: 12pt;
+    background-color: #11ffee00;
+}
+.mypage_inner
+{
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.308);
+    top: 1400px;
+    left: 300px;
+    z-index: 10;
+}
+/* textarea
+{
+    position: absolute;
+    width: 1000px;
+    height: 300px;
+    font-size: 17px;
+    font-family: 'MaruBuri-Regular';
+} */
+#toc-toggle {
+    transform: matrix(1,0,0,1,242.8255,1155.1745) rotate(90deg);
+    transform-origin: center;
+    position: absolute;
+    width: 17.406px;
+    height: 21.057px;
+    left: 0px;
+    top: 0px;
+    overflow: visible;
+}
+#openclose1 {
+    fill: rgba(65,76,146,1);
+}
+.openclose1 {
+    overflow: visible;
+    position: absolute;
+    width: 21.057px;
+    height: 20.039px;
+    left: 0px;
+    top: 0px;
+    transform: matrix(1,0,0,1,0,0);
+}
+#openclose2 {
+    fill: rgba(65,76,146,1);
+}
+.openclose2 {
+    overflow: visible;
+    position: absolute;
+    width: 21.057px;
+    height: 20.039px;
+    left: 7px;
+    top: 0px;
+    transform: matrix(1,0,0,1,0,0);
+}
+#post_save {
+    fill: rgba(165,171,203,1);
+}
+.post_save {
+    position: absolute;
+    overflow: visible;
+    width: 74px;
+    height: 43px;
+    left: 1446px;
+    top: 1229px;
+}
+#post_delete {
+    fill: rgba(165,171,203,1);
+}
+.post_delete {
+    position: absolute;
+    overflow: visible;
+    width: 74px;
+    height: 43px;
+    left: 1530px;
+    top: 1229px;
+}
+#_b {
+    left: 1450px;
+    top: 1241px;
+    position: absolute;
+    overflow: visible;
+    width: 68px;
+    white-space: nowrap;
+    text-align: center;
+    font-family: 'HSBombaram3_Regular';
+    font-size: 17px;
+    color: rgba(32,67,99,1);
+}
+#_ca {
+    left: 1512px;
+    top: 1241px;
+    position: absolute;
+    overflow: visible;
+    width: 112px;
+    white-space: nowrap;
+    text-align: center;
+    font-family: 'HSBombaram3_Regular';
+    font-size: 17px;
+    color: rgba(32,67,99,1);
+}
+#Todays_Record {
+    filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.549));
+    left: 262px;
+    top: 1105px;
+    position: absolute;
+    overflow: visible;
+    width: 226px;
+    white-space: nowrap;
+    text-align: center;
+    font-family: 'HSBombaram3_Regular';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 28px;
+    color: rgba(0,0,0,1);
+}
+#_459 {
+    opacity: 0.8;
+    fill: rgba(255,255,255,1);
+}
+._459 {
+    position: absolute;
+    overflow: visible;
+    width: 309px;
+    height: 479px;
+    left: 1413px;
+    top: 382px;
+}
+#_512 {
+    fill: rgba(205,205,205,1);
+}
+._512 {
+    position: absolute;
+    overflow: visible;
+    width: 223px;
+    height: 202px;
+    left: 1456px;
+    top: 433px;
+}
+#mypage_nickname {
+    left: 1501px;
+    top: 655px;
+    position: absolute;
+    overflow: visible;
+    width: 135px;
+    white-space: nowrap;
+    text-align: center;
+    font-family: 'MaruBuri-Regular';
+    font-size: 25px;
+    color: rgba(0,0,0,1);
+}
+#mypage_logout {
+    left: 1573px;
+    top: 814px;
+    position: absolute;
+    overflow: visible;
+    width: 135px;
+    white-space: nowrap;
+    text-align: center;
+    font-family: 'MaruBuri-Regular';
+    font-size: 16px;
+    color: rgba(0,0,0,1);
+}
+#mypage_infochange {
+    left: 1440px;
+    top: 814px;
+    position: absolute;
+    overflow: visible;
+    width: 135px;
+    white-space: nowrap;
+    text-align: center;
+    font-family: 'MaruBuri-Regular';
+    font-size: 16px;
+    color: rgba(0,0,0,1);
+}
+#mypost {
+    fill: rgba(165,171,203,1);
+}
+.mypost {
+    position: absolute;
+    overflow: visible;
+    width: 240px;
+    height: 34px;
+    left: 1447px;
+    top: 706px;
+}
+#scrap {
+    fill: rgba(165,171,203,1);
+}
+.scrap {
+    position: absolute;
+    overflow: visible;
+    width: 240px;
+    height: 34px;
+    left: 1448px;
+    top: 755px;
+}
+#___cb {
+    left: 1454px;
+    top: 713px;
+    position: absolute;
+    overflow: visible;
+    width: 135px;
+    white-space: nowrap;
+    text-align: center;
+    font-family: 'MaruBuri-Regular';
+    font-size: 15px;
+    color: rgba(0,0,0,1);
+}
+#_ce {
+    left: 1448px;
+    top: 763px;
+    position: absolute;
+    overflow: visible;
+    width: 135px;
+    white-space: nowrap;
+    text-align: center;
+    font-family: 'MaruBuri-Regular';
+    font-size: 15px;
+    color: rgba(0,0,0,1);
+}
+#_95 {
+    transform: matrix(1,0,0,1,1658.0882,763.0001) rotate(0deg);
+    transform-origin: center;
+    position: absolute;
+    width: 14.438px;
+    height: 17.467px;
+    left: 0px;
+    top: 0px;
+    overflow: visible;
+}
+#go1 {
+    fill: rgba(65,76,146,1);
+}
+.go1 {
+    overflow: visible;
+    position: absolute;
+    width: 8.328px;
+    height: 17.467px;
+    left: 0px;
+    top: 0px;
+    transform: matrix(1,0,0,1,0,0);
+}
+#go2 {
+    fill: rgba(65,76,146,1);
+}
+.go2 {
+    overflow: visible;
+    position: absolute;
+    width: 8.328px;
+    height: 17.467px;
+    left: 6.11px;
+    top: 0px;
+    transform: matrix(1,0,0,1,0,0);
+}
+.calendar
+{
+    background-color: rgba(143, 82, 241, 0.144);
+    position: absolute;
+    top: 500px;
+    left: 200px;
+    z-index: 0;
+}
+#_96 {
+    transform: matrix(1,0,0,1,1658.0882,714.5001) rotate(0deg);
+    transform-origin: center;
+    position: absolute;
+    width: 14.438px;
+    height: 17.467px;
+    left: 0px;
+    top: 0px;
+    overflow: visible;
+}
+#go3 {
+    fill: rgba(65,76,146,1);
+}
+.go3 {
+    overflow: visible;
+    position: absolute;
+    width: 8.328px;
+    height: 17.467px;
+    left: 0px;
+    top: 0px;
+    transform: matrix(1,0,0,1,0,0);
+}
+#go4 {
+    fill: rgba(65,76,146,1);
+}
+.go4 {
+    overflow: visible;
+    position: absolute;
+    width: 8.328px;
+    height: 17.467px;
+    left: 6.11px;
+    top: 0px;
+    transform: matrix(1,0,0,1,0,0);
+}
+#_cj {
+    left: 334px;
+    top: 77px;
+    position: absolute;
+    overflow: visible;
+    width: 91px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: 'HSBombaram3_Regular';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    color: rgba(18,18,18,1);
+}
+#ABOUT_ {
+    left: 140px;
+    top: 77px;
+    position: absolute;
+    overflow: visible;
+    width: 117px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: 'HSBombaram3_Regular';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    color: rgba(18,18,18,1);
+}
+._517 {
+    position: absolute;
+    overflow: visible;
+    width: 731px;
+    height: 688px;
+    left: 408px;
+    top: 482px;
+    font-size: 50px;
+    font-family: 'HSBombaram3_Regular';
+}
+.img_upload {
+    position: absolute;
+    overflow: visible;
+    width: 225px;
+    height: 278px;
+    left: 1071px;
+    top: 518px;
+}
+#_cn {
+    left: 496px;
+    top: 77px;
+    position: absolute;
+    overflow: visible;
+    width: 91px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: 'HSBombaram3_Regular';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    color: rgba(18,18,18,1);
+}
+#_co {
+    left: 662px;
+    top: 77px;
+    position: absolute;
+    overflow: visible;
+    width: 91px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: 'HSBombaram3_Regular';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    color: rgba(18,18,18,1);
+}
+.star-rating {
+    display: flex;
+    flex-direction: row-reverse;
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+    justify-content: space-around;
+    padding: 0 0.2em;
+    text-align: center;
+    width: 5em;
+  }
+   
+  .star-rating input {
+    display: none;
+  }
+   
+  .star-rating label {
+    -webkit-text-fill-color: transparent; /* Will override color (regardless of order) */
+    -webkit-text-stroke-width: 2.3px;
+    -webkit-text-stroke-color: #2b2a29;
+    cursor: pointer;
+  }
+   
+  .star-rating :checked ~ label {
+    -webkit-text-fill-color: gold;
+  }
+   
+  .star-rating label:hover,
+  .star-rating label:hover ~ label {
+    -webkit-text-fill-color: #fff58c;
+  }
+
+/* 게시판 시작 */
+
+.mediaViewInfo {
+		--web-view-name: 자유게시판 – 3;
+		--web-view-id: __3;
+		--web-scale-on-resize: true;
+		--web-enable-deep-linking: true;
+	}
+	:root {
+		--web-view-ids: __3;
+	}
+	* {
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+		border: none;
+	}
+	#new {
+		position: absolute;
+		width: 1920px;
+		height: 1533px;
+		background: linear-gradient(180.1deg, rgba(0,24,65,1) 0%, rgba(21,60,100,1) 21.16%, rgba(68,90,157,1) 41.58%, rgba(75,151,186,1) 100%, rgba(57,0,113,1) 100%);
+		overflow: hidden;
+		--web-view-name: 자유게시판 – 3;
+		--web-view-id: __3;
+		--web-scale-on-resize: true;
+		--web-enable-deep-linking: true;
+	}
+	#_36 {
+		mix-blend-mode: multiply;
+		position: absolute;
+		width: 2101px;
+		height: 1788.001px;
+		left: -181px;
+		top: 0px;
+		overflow: visible;
+	}
+	#_37 {
+		opacity: 0.49;
+		mix-blend-mode: lighten;
+		position: absolute;
+		width: 1919.999px;
+		height: 1533px;
+		left: 0.001px;
+		top: 0px;
+		overflow: visible;
+	}
+	#_3 {
+		fill: rgba(52,62,120,1);
+	}
+	._3 {
+		position: absolute;
+		overflow: visible;
+		width: 1920px;
+		height: 60px;
+		left: 0px;
+		top: 0px;
+	}
+	#_4 {
+		fill: rgba(165,171,203,1);
+	}
+	._4 {
+		position: absolute;
+		overflow: visible;
+		width: 1920px;
+		height: 60px;
+		left: 0px;
+		top: 60px;
+	}
+	/* # {
+		left: 1573px;
+		top: 81px;
+		position: absolute;
+		overflow: visible;
+		width: 59px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: MARU Buri Beta;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 15px;
+		color: rgba(0,0,0,1);
+	} */
+	#_ {
+		left: 1695px;
+		top: 83px;
+		position: absolute;
+		overflow: visible;
+		width: 59px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: MARU Buri Beta;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 15px;
+		color: rgba(0,0,0,1);
+	}
+	#_1 {
+		fill: rgba(255,255,255,1);
+	}
+	._1 {
+		position: absolute;
+		overflow: visible;
+		width: 34px;
+		height: 34px;
+		left: 1520px;
+		top: 74px;
+	}
+	#__ {
+		filter: drop-shadow(0px 5px 9px rgba(0, 0, 0, 0.71));
+		left: 140px;
+		top: 13px;
+		position: absolute;
+		overflow: visible;
+		width: 102px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: HSBomBaram 3.0;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 30px;
+		color: rgba(255,255,255,1);
+	}
+	#_ba {
+		filter: drop-shadow(0px 5px 9px rgba(0, 0, 0, 0.71));
+		left: 139px;
+		top: 214px;
+		position: absolute;
+		overflow: visible;
+		width: 128px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: HSBomBaram 3.0;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 35px;
+		color: rgba(255,255,255,1);
+	}
+	#_418 {
+		fill: rgba(125,122,191,1);
+	}
+	._418 {
+		position: absolute;
+		overflow: visible;
+		width: 1639px;
+		height: 5px;
+		left: 141px;
+		top: 303px;
+	}
+	#_168 {
+		fill: rgba(32,67,99,1);
+	}
+	._168 {
+		position: absolute;
+		overflow: visible;
+		width: 1920px;
+		height: 95px;
+		left: 0px;
+		top: 1439px;
+	}
+	#_437 {
+		fill: rgba(255,255,255,1);
+		stroke: rgba(165,171,203,1);
+		stroke-width: 3px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	._437 {
+		position: absolute;
+		overflow: visible;
+		width: 331px;
+		height: 55px;
+		left: 795px;
+		top: 385px;
+	}
+	#_438 {
+		fill: rgba(255,255,255,1);
+		stroke: rgba(165,171,203,1);
+		stroke-width: 3px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	._438 {
+		position: absolute;
+		overflow: visible;
+		width: 775px;
+		height: 55px;
+		left: 573px;
+		top: 467px;
+	}
+	#___ba {
+		left: 675px;
+		top: 398px;
+		position: absolute;
+		overflow: visible;
+		width: 107px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Segoe UI;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 22px;
+		color: rgba(255,255,255,1);
+	}
+	#__bb {
+		left: 1313px;
+		top: 914px;
+		position: absolute;
+		overflow: visible;
+		width: 7px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Segoe UI;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 22px;
+		color: rgba(18,18,18,1);
+	}
+	#___bc {
+		left: 497px;
+		top: 480px;
+		position: absolute;
+		overflow: visible;
+		width: 63px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Segoe UI;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 22px;
+		color: rgba(255,255,255,1);
+	}
+	#_440 {
+		fill: rgba(255,255,255,1);
+		stroke: rgba(165,171,203,1);
+		stroke-width: 3px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	._440 {
+		position: absolute;
+		overflow: visible;
+		width: 1364px;
+		height: 612px;
+		left: 278px;
+		top: 568px;
+	}
+	#___be {
+		left: 297px;
+		top: 587px;
+		position: absolute;
+		overflow: visible;
+		width: 216px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Segoe UI;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 22px;
+		color: rgba(18,18,18,1);
+	}
+	#_441 {
+		fill: rgba(165,171,203,1);
+	}
+	._441 {
+		position: absolute;
+		overflow: visible;
+		width: 156px;
+		height: 55px;
+		left: 882px;
+		top: 1207px;
+	}
+	#Image_ {
+		left: 790px;
+		top: 1220px;
+		position: absolute;
+		overflow: visible;
+		width: 78px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Segoe UI;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 22px;
+		color: rgba(255,255,255,1);
+	}
+	#_bh {
+		left: 916px;
+		top: 1220px;
+		position: absolute;
+		overflow: visible;
+		width: 89px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Segoe UI;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 22px;
+		color: rgba(18,18,18,1);
+	}
+	#_433 {
+		fill: rgba(125,122,191,1);
+		stroke: rgba(255,255,255,1);
+		stroke-width: 2px;
+		stroke-linejoin: miter;
+		stroke-linecap: butt;
+		stroke-miterlimit: 4;
+		shape-rendering: auto;
+	}
+	._433 {
+		position: absolute;
+		overflow: visible;
+		width: 155px;
+		height: 61px;
+		left: 883px;
+		top: 1345px;
+	}
+	#_bj {
+		left: 939px;
+		top: 1361px;
+		position: absolute;
+		overflow: visible;
+		width: 45px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Segoe UI;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 22px;
+		color: rgba(255,255,255,1);
+	}
+	#_bk {
+		left: 334px;
+		top: 80px;
+		position: absolute;
+		overflow: visible;
+		width: 83px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: HSBomBaram 3.0;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 18px;
+		color: rgba(18,18,18,1);
+	}
+	#ABOUT_ {
+		left: 140px;
+		top: 80px;
+		position: absolute;
+		overflow: visible;
+		width: 115px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: HSBomBaram 3.0;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 18px;
+		color: rgba(18,18,18,1);
+	}
+	#_bm {
+		left: 496px;
+		top: 80px;
+		position: absolute;
+		overflow: visible;
+		width: 87px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: HSBomBaram 3.0;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 18px;
+		color: rgba(18,18,18,1);
+	}
+	#_bn {
+		left: 662px;
+		top: 80px;
+		position: absolute;
+		overflow: visible;
+		width: 83px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: HSBomBaram 3.0;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 18px;
+		color: rgba(18,18,18,1);
+	}
+
+     /* 공통 nav 바 */
+@font-face {
+    font-family: 'HSBombaram3_Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10@1.1/HSBombaram3_Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+	}
+
+	@font-face {
+    font-family: 'MaruBuri-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10-21@1.0/MaruBuri-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+	}	
+
+
+#mainlogo {
+    filter: drop-shadow(0px 5px 9px rgba(0, 0, 0, 0.71));
+    left: 140px;
+    top: 3px;
+    position: relative;
+    overflow: visible;
+    width: 107px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: 'HSBombaram3_Regular';
+    text-decoration:none;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    color: rgba(255,255,255,1);
+    z-index: 1;
+}
+
+
+#logo {
+    background-color: rgba(52,62,120,1);
+    z-index: 1;
+	width:1920px
+}
+.mainnamebackground {
+    position: absolute;
+    overflow: visible;
+    width: 1920px;
+    height: 60px;
+    left: 0px;
+    top: 0px;
+    z-index: 1;
+}
+
+
+#navbackground {
+    fill: rgba(165,171,203,1);
+    z-index: 1;
+	}
+.navbackground {
+    position: absolute;
+    overflow: visible;
+    width: 1920px;
+    height: 60px;
+    left: 0px;
+    top: 60px;
+    z-index: 1;
+}
+
+#nav1 {
+    left: 140px;
+    top: 7px;
+    position: absolute;
+    overflow: visible;
+    width: 117px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: 'HSBombaram3_Regular';
+    text-decoration:none;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    color: rgba(18,18,18,1);
+    z-index: 1;
+}
+
+#nav2 {
+    left: 334px;
+    top: 7px;
+    position: absolute;
+    overflow: visible;
+    width: 91px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: 'HSBombaram3_Regular';
+    text-decoration:none;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    color: rgba(18,18,18,1);
+    z-index: 1;
+}
+
+#nav3 {
+    left: 496px;
+    top: 7px;
+    position: absolute;
+    overflow: visible;
+    width: 91px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: 'HSBombaram3_Regular';
+    text-decoration:none;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    color: rgba(18,18,18,1);
+    z-index: 1;
+}
+#nav4 {
+    left: 662px;
+    top: 7px;
+    position: absolute;
+    overflow: visible;
+    width: 91px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: 'HSBombaram3_Regular';
+    text-decoration:none;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    color: rgba(18,18,18,1);
+    z-index: 1;
+}
+
+#nickname {
+    left: 1573px;
+    top: 79px;
+    position: absolute;
+    overflow: visible;
+    width: 61px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: 'MaruBuri-Regular';
+    text-decoration:none ;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    color: rgba(0,0,0,1);
+    z-index: 1;
+}
+#logout {
+    left: 1695px;
+    top: 81px;
+    position: absolute;
+    overflow: visible;
+    width: 61px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: 'MaruBuri-Regular';
+    text-decoration:none ;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    color: rgba(0,0,0,1);
+}
+
+#myimage {
+    fill: rgba(255,255,255,1);
+    z-index: 1;
+}
+.myimage {
+    position: absolute;
+    overflow: visible;
+    width: 34px;
+    height: 34px;
+    left: 1520px;
+    top: 74px;
+    z-index: 1;
+}
+
+/* 공통 nav 바 끝 */
+
+.btn-secondary {
+    background-color: rgb(125,122,191);
+    border-color: rgb(125,122,191);
+    }
+
+    .btn:hover {
+    color: white;
+	background-color: rgb(165,171,203);
+    border-color: rgb(165,171,203);
+    }
+
+	.bg-light {
+    background-color: rgba(165,171,203,1);
+    z-index: 1;
+}
+
+#navlogin{
+	position: relative;
+	left: 1573px;
+    top: 1px;
+	font-family: 'MaruBuri-Regular';
+	color: rgba(0,0,0,1);
+}
+
+#nav5{
+	position: relative;
+	left: 1500px;
+    top: 1px;
+	font-family: 'MaruBuri-Regular';
+	color: rgba(0,0,0,1);
+}
+
+#img444{
+	position: relative;
+	left: 1500px;
+    top: 1px;
+	
+}
+
+.navbar{
+	width:1920px
+}

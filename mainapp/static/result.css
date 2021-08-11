@@ -1,0 +1,49 @@
+h4 {
+  font-family: 'MaruBuri-Regular';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10-21@1.0/MaruBuri-Regular.woff') format('woff');
+  color: whitesmoke;     
+}
+
+#result{
+    display: none;
+    background-color: none;
+    width: 70%;
+    text-align: center;
+    border-radius: 20px;
+    color: whitesmoke;
+  }
+  
+  .resultname{
+    font-size: 40px;
+    font-family: 'HSBombaram3_Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10@1.1/HSBombaram3_Regular.woff') format('woff');
+    
+  }
+  
+  .resultDesc{
+    font-size: 25px;
+    font-family: 'MaruBuri-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10-21@1.0/MaruBuri-Regular.woff') format('woff');
+    text-align:left;
+  }
+
+  .resultnumb{
+    font-size: 25px;
+    font-family: 'MaruBuri-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10-21@1.0/MaruBuri-Regular.woff') format('woff');
+    
+  }
+  
+  .return{
+    color: white;
+    background-color: rgba(25,45,96,1);
+    font-size: 20px;
+    border: 0px;
+    border-radius: 20px;
+  }
+  
+  .return:hover, .return:focus {
+    background-color: whitesmoke;
+    color: rgba(25,45,96,1);
+  }
+

@@ -6,6 +6,10 @@ from .forms import BoardForm, CommentForm
 from django.core.paginator import Paginator
 from django.contrib import messages
 
+from mainapp.models import BoardMember
+from django.views.generic import DetailView
+from django.db.models import Count
+
 #검색에 필요한 패키지 임포트
 from django.views.generic.edit import FormView
 from boardapp.forms import BoardSearchForm
@@ -13,12 +17,20 @@ from django.db.models import Q
 from django.shortcuts import render 
 
 # 홈(게시판 홈)
+# def board(request):
+#     boards = Board.objects.all().order_by('-id')
+#     paginator = Paginator(boards, 5)
+#     page = request.GET.get('page')
+#     boards = paginator.get_page(page)
+#     return render(request, 'board.html', {'boards':boards})
 def board(request):
-    boards = Board.objects.all().order_by('-id')
-    paginator = Paginator(boards, 5)
-    page = request.GET.get('page')
-    boards = paginator.get_page(page)
-    return render(request, 'board.html', {'boards':boards})
+    boards = Board.objects.all().order_by('-id') #models.py Board 클래스의 모든 객체를 board_list에 담음
+    # board_list 페이징 처리
+    paginator = Paginator(boards, '8') #Paginator(분할될 객체, 페이지 당 담길 객체수)
+    page = request.GET.get('page','1') #GET 방식으로 정보를 받아오는 데이터
+    boards = paginator.get_page(page) #페이지 번호를 받아 해당 페이지를 리턴 get_page 권장
+    return render(request, 'board.html', {'boards':boards}) 
+
 
 # 게시글 detail 
 def detail(request, id):
@@ -128,3 +140,16 @@ class SearchFormView(FormView):
         context['object_list'] = post_list
 
         return render(self.request, self.template_name, context)
+
+def mypage(request): 
+    return render(request, "mypage.html")
+
+#내가쓴글
+def mypage(request):
+    me = request.session.get('user')
+    boards = Board.objects.all().filter(writer = me).order_by('-id')
+    paginator = Paginator(boards, 5)
+    page = request.GET.get('page')
+    boards = paginator.get_page(page)
+    return render(request, 'mypage.html', {'boards':boards})
+    

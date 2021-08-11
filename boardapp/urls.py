@@ -15,4 +15,12 @@ urlpatterns = [
     path('delete/<str:id>', delete, name="delete"),
     path('comment/<str:id>', comment, name="comment"),
     path('search/', SearchFormView.as_view(), name='search'),
+    path('mypage/', mypage, name="mypage"),
 ]
+
+from django.conf.urls.static import static
+from django.conf import settings
+
+
+
+urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
