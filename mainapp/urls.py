@@ -7,7 +7,8 @@ from mainapp import views
 
 urlpatterns = [
     path('', home, name="home"),
-    path('first/', first, name="first"),
+    path('first', first, name="first"),
+    path('first/', views.img, name="img"),
     path('register/', register, name="register"),
     path('about', about, name="about"),
     path('mbti', mbti, name="mbti"),

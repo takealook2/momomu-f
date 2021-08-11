@@ -16,7 +16,7 @@ html, body {
   }
   
   /* ======== Calendar ======== */
-  .my-calendar {
+  /* .my-calendar {
     width: 700px;
     margin: 30px;
     padding: 20px 20px 10px;
@@ -24,7 +24,17 @@ html, body {
     font-weight: 800;
     border: 1px solid #ddd;
     cursor: default;
-  }
+  } */
+  .my-calendar {
+    width: 910px;
+    height: 630px;
+    margin: 30px;
+    padding: 20px 20px 10px;
+    text-align: center;
+    font-weight: 800;
+    border: 1px solid #ddd;
+    cursor: default;
+}
   .my-calendar .clicked-date {
     border-radius: 25px;
     margin-top: 36px;
@@ -99,16 +109,16 @@ html, body {
     position: relative;
     cursor: pointer;
   }
-  .cal-table td.today {
+  /* .cal-table td.today {
     background: #ffd255;
     border-radius: 50%;
-    color: #fff;
+    color:black;
   }
   .cal-table td.day-active {
     background: #ff8585;
     border-radius: 50%;
-    color: #fff;
-  }
+    color:black;
+  } */
   .cal-table td.has-event:after {
     content: '';
     display: block;
@@ -119,3 +129,4 @@ html, body {
     height: 4px;
     background: #FFC107;
   }
+  

@@ -156,15 +156,15 @@
 }
 #Record_of_Musicals {
     filter: drop-shadow(0px 5px 9px rgba(0, 0, 0, 0.71));
-    left: 810px;
-    top: 207px;
+    left: 740px;
+    top: 150px;
     position: absolute;
     overflow: visible;
     width: 291px;
     white-space: nowrap;
     text-align: left;
     font-family: 'HSBombaram3_Regular';
-    font-size: 35px;
+    font-size: 45px;
     color: rgba(255,255,255,1);
 }
 #_1_bj {
@@ -176,12 +176,20 @@
     position: absolute;
     width: 389px;
     height: 690.359px;
-    left: 982.912px;
+    left: 1300px;
     top: 379.01px;
     transform: matrix(1,0,0,1,0,0);
 }
+
+img, svg {
+    vertical-align: middle;
+}
+img, svg {
+    vertical-align: middle;
+}
+
 #TODAY {
-    left: 1150.913px;
+    left: 1454px;
     top: 416.689px;
     position: absolute;
     overflow: visible;
@@ -193,7 +201,7 @@
     color: rgba(255,250,250,1);
 }
 #TodayInfo {
-    left: 1130.913px;
+    left: 1435px;
     top: 457.189px;
     position: absolute;
     overflow: visible;
@@ -205,8 +213,8 @@
     color: rgba(255,250,250,1);
 }
 #ticket_inner {
-    left: 1055.662px;
-    top: 832.189px;
+    left: 1360px;
+    top: 880px;
     position: absolute;
     overflow: visible;
     width: 64px;
@@ -215,7 +223,7 @@
     margin-top: -17px;
     text-align: left;
     font-family: 'HSBombaram3_Regular';
-    font-size: 15px;
+    font-size: 20px;
     color: rgba(0,0,0,1);
 }
 #ticket_save {
@@ -264,12 +272,13 @@
     font-size: 17px;
     color: rgba(32,67,99,1);
 }
-#star
-{
-    position: absolute;
-    top: 195px;
-    left: 40px;
+
+#star {
+        position: absolute;
+        top: 1005px;
+        left: 1402px;
 }
+
 input
 {
     BORDER-BOTTOM: rgba(255, 255, 255, 0.24) 1px solid;
@@ -296,9 +305,12 @@ input
     position: absolute;
     width: 389px;
     height: 2px;
-    left: 982.912px;
+    left: 1300px;
     top: 498.189px;
     transform: matrix(1,0,0,1,0,0);
+}
+img, svg {
+    vertical-align: middle;
 }
 #_27 {
     fill: transparent;
@@ -316,7 +328,7 @@ input
     position: absolute;
     width: 389px;
     height: 2px;
-    left: 982.912px;
+    left: 1300px;
     top: 993.189px;
     transform: matrix(1,0,0,1,0,0);
 }
@@ -459,7 +471,7 @@ input
 #Todays_Record {
     filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.549));
     left: 262px;
-    top: 1105px;
+    top: 1140px;
     position: absolute;
     overflow: visible;
     width: 226px;
@@ -489,21 +501,19 @@ input
 ._512 {
     position: absolute;
     overflow: visible;
-    width: 223px;
-    height: 202px;
-    left: 1456px;
-    top: 433px;
+    left: 1362px;
+    top: 550px;
 }
 #mypage_nickname {
-    left: 1501px;
-    top: 655px;
+    left: 1456px;
+    top: 450px;
     position: absolute;
     overflow: visible;
-    width: 135px;
+    width: 223px;
     white-space: nowrap;
     text-align: center;
     font-family: 'MaruBuri-Regular';
-    font-size: 25px;
+    font-size: 23px;
     color: rgba(0,0,0,1);
 }
 #mypage_logout {
@@ -553,7 +563,7 @@ input
     top: 755px;
 }
 #___cb {
-    left: 1454px;
+    left: 1480px;
     top: 713px;
     position: absolute;
     overflow: visible;
@@ -565,7 +575,7 @@ input
     color: rgba(0,0,0,1);
 }
 #_ce {
-    left: 1448px;
+    left: 1485px;
     top: 763px;
     position: absolute;
     overflow: visible;
@@ -610,13 +620,14 @@ input
     top: 0px;
     transform: matrix(1,0,0,1,0,0);
 }
-.calendar
-{
+.calendar {
     background-color: rgba(143, 82, 241, 0.144);
     position: absolute;
-    top: 500px;
+    top: 380px;
     left: 200px;
     z-index: 0;
+    width: 1000px;
+    height: 690px;
 }
 #_96 {
     transform: matrix(1,0,0,1,1658.0882,714.5001) rotate(0deg);

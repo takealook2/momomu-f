@@ -328,8 +328,8 @@
     top: 819px;
     z-index: 1;
 }
-.btn3{
-    left: 933px;
+.btn3 {
+    left: 925px;
     top: 828px;
     position: absolute;
     overflow: visible;
@@ -341,7 +341,7 @@
     font-weight: normal;
     font-size: 14px;
     color: rgba(255,255,255,1);
-    cursor:pointer;
-    background:transparent;
+    cursor: pointer;
+    background: transparent;
     z-index: 2;
 }

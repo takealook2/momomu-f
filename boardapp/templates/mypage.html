@@ -14,6 +14,22 @@
 <script src="https://cpwebassets.codepen.io/assets/common/stopExecutionOnTimeout-8216c69d01441f36c0ea791ae2d4469f0f8ff5326f00ae2d00e4bb7d20e24edb.js"></script>
 
 <style>
+.btn-secondary {
+    background-color: rgb(125,122,191);
+    border-color: rgb(125,122,191);
+    }
+
+    .btn:hover {
+    color: white;
+	background-color: rgb(165,171,203);
+    border-color: rgb(165,171,203);
+    }
+
+	.bg-light {
+    background-color: rgba(165,171,203,1);
+    z-index: 1;
+}
+
 #mypage_inner{
 	position: absolute;
 	z-index: 1;
@@ -25,6 +41,52 @@
 	FONT-SIZE: 15pt;
 	/* align-items: center; */
 }
+.my-calendar {
+    width: 910px;
+    height: 630px;
+    margin: 30px;
+    padding: 20px 20px 10px;
+    text-align: center;
+    font-weight: 800;
+    border: 1px solid #ddd;
+    cursor: default;
+}
+.my-calendar .calendar-box {
+    float: right;
+    width: 50%;
+    padding-left: 0px;
+    padding-top: 110px;
+    color: white;
+    margin-right: 20px;
+}
+
+.my-calendar .clicked-date {
+    border-radius: 25px;
+    margin-top: 135px;
+    margin-left: 50px;
+    float: left;
+    width: 35%;
+    padding: 46px 0 26px;
+    background: white;
+}
+
+.cal-table td.today {
+    background: #ffd255;
+    border-radius: 50%;
+    color:black;
+  }
+  .cal-table td.day-active {
+    background: #ff8585;
+    border-radius: 50%;
+    color:black;
+  }
+  
+.cal-table {
+    width: 82%;
+    margin-left: 40px;
+    margin-top: 40px;
+}
+
 </style>
 </head>
 <body>
@@ -32,7 +94,7 @@
     
 <header>    
 	<div id="logo">
-		<a href="{%url 'first'%}" id="mainlogo">모모뮤</a>
+		<a href="{%url 'img'%}" id="mainlogo">모모뮤</a>
 		</div>
 </header>
 {%load static%}
@@ -48,7 +110,7 @@
             </li>
 			
 			<li class="nav-item">
-              <a class="nav-link" id="nav2" href=>뮤지컬 정보</a>
+              <a class="nav-link" id="nav2" href="{%url 'musical'%}">뮤지컬 정보</a>
             </li>
             
             <li class="nav-item">
@@ -114,30 +176,11 @@
 	<!--티켓 내부 시작-->
 	<div id="ticket_inner">
 		<form action="" method="POST">
-			<span>뮤지컬 이름   &nbsp;&nbsp;<input type="text">
-				<br/>극장 이름  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text">
-				<br/>좌석번호   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text">
-				<br/>예매번호   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text">
+			<span>닉네임   &nbsp;&nbsp; :&nbsp;&nbsp;{{request.session.nickname}}
+				<br/>이메일  &nbsp;&nbsp;&nbsp;:&nbsp;&nbsp;{{request.session.email}}
 			</span>
 		</form>
-		<button onclick="#" type="submit">
-			<svg class="ticket_save">
-				<rect id="ticket_save" rx="21.5" ry="21.5" x="0" y="0" width="74" height="43">
-					<div id="ticket_save_txt">
-						<span>저장</span>
-					</div>
-				</rect>
-			</svg>
-		</button>
-		<button onclick="#" type="submit">
-			<svg class="ticket_delete">
-				<rect id="ticket_delete" rx="21.5" ry="21.5" x="0" y="0" width="74" height="43">
-					<div id="ticket_delete_txt">
-						<span>삭제</span>
-					</div>
-				</rect>
-			</svg>
-		</button>
+		</div>
 		<!--별점 시스템 시작-->
 		<div id="star">
 			<div class="star-rating space-x-4 mx-auto">
@@ -154,7 +197,6 @@
 			</div>
 		</div>
 		<!--별점 시스템 끝-->
-	</div>
 	<!--티켓 내부 끝-->
 	<svg class="_25" viewBox="0 0 389 2">
 		<path id="_25" d="M 0 0 L 389 0">
@@ -165,10 +207,10 @@
 		</path>
 	</svg>
 
-	<svg class="_418">
+	{% comment %} <svg class="_418">
 		<rect id="_418" rx="0" ry="0" x="0" y="0" width="1399" height="4">
 		</rect>
-	</svg>
+	</svg> {% endcomment %}
 
 	<div id="toc-toggle" onclick="openCloseToc()">
 		<div>
@@ -256,19 +298,22 @@
 	<div id="Todays_Record">
 		<span>내가 쓴 글</span>
 	</div>
-	<svg class="_459">
+	{% comment %} <svg class="_459">
 		<rect id="_459" rx="70" ry="70" x="0" y="0" width="309" height="479">
 		</rect>
-	</svg>
-	<svg class="_512">
-		<rect id="_512" rx="33" ry="33" x="0" y="0" width="223" height="202">
-		</rect>
-	</svg>
-	<div id="mypage_nickname">
-		<span><b>{{request.session.nickname}}</b></span>
-	</div>
+	</svg>{% endcomment %}
+	<div class="_512">
+		<a href="{%url 'mbti'%}"><img src="/static/mbtimg.PNG" id="_512" rx="33" ry="33" x="0" y="0" width="260" height="280"></a>
+	</div> 
+	{% comment %} <div id="mypage_nickname">
+		<span><b>{{request.session.nickname}}</b>님</span>
+		<br><br>
+		---- <b>회원정보<b>----
+		<br>{{request.session.username}}
+		<br>{{request.session.email}}
+	</div> {% endcomment %}
 
-	<button onclick="location.href= '{% url 'logout' %}'">
+	{% comment %} <button onclick="location.href= '{% url 'logout' %}'">
 	<div id="mypage_logout">
 		<span>로그아웃</span>
 	</div>
@@ -278,17 +323,9 @@
 	<div id="mypage_infochange">
 		<span>회원정보수정</span>
 	</div>
-	</button>
+	</button> {% endcomment %}
 
-<button onclick="location.href= '{%url 'mypage' %}'">
-	<svg class="mypost">
-		<rect id="mypost" rx="17" ry="17" x="0" y="0" width="240" height="34">
-			<div id="___cb">
-				<span>내가 쓴 글</span>
-			</div>
-		</rect>
-	</svg>
-	<div id="_96">
+	{% comment %} <div id="_96">
 		<svg class="go3" viewBox="0 0 8.328 17.467">
 			<path id="go3" d="M 5.817260265350342 8.73021411895752 L 0.3057161569595337 2.125673294067383 C -0.1019041240215302 1.636833667755127 -0.1019041240215302 0.8463690280914307 0.3057161569595337 0.3627298772335052 C 0.7133349180221558 -0.12090964615345 1.372466921806335 -0.12090964615345 1.780086398124695 0.3627298772335052 L 8.024479866027832 7.84614086151123 C 8.41909122467041 8.319378852844238 8.427764892578125 9.078641891479492 8.054835319519043 9.56748104095459 L 1.784423112869263 17.10289573669434 C 1.580613017082214 17.34731292724609 1.311756730079651 17.46692657470703 1.047237157821655 17.46692657470703 C 0.782717764377594 17.46692657470703 0.5138614773750305 17.34731292724609 0.3100520968437195 17.10289573669434 C -0.09756739437580109 16.61405563354492 -0.09756739437580109 15.8235912322998 0.3100520968437195 15.33995246887207 L 5.817260265350342 8.73021411895752 Z">
 			</path>
@@ -298,26 +335,27 @@
 			</path>
 		</svg>
 	</div>
-</button>
+</button> {% endcomment %}
 
-<button onclick="location.href= 'scrap.html'">
-	<svg class="scrap">
-		<rect id="scrap" rx="17" ry="17" x="0" y="0" width="240" height="34">
-			<div id="_ce">
-				<span>스크랩</span>
+{% comment %} <button onclick="location.href= '{%url 'mbti' %}'">
+	<svg class="mypost">
+		<rect id="mypost" rx="17" ry="17" x="0" y="0" width="240" height="34">
+			<div id="___cb">
+				<span><b>MBTI 테스트하러가기</b></span>
 			</div>
 		</rect>
 	</svg>
-	<div id="_95">
-		<svg class="go1" viewBox="0 0 8.328 17.467">
-			<path id="go2" d="M 5.817260265350342 8.73021411895752 L 0.3057161569595337 2.125673294067383 C -0.1019041240215302 1.636833667755127 -0.1019041240215302 0.8463690280914307 0.3057161569595337 0.3627298772335052 C 0.7133349180221558 -0.12090964615345 1.372466921806335 -0.12090964615345 1.780086398124695 0.3627298772335052 L 8.024479866027832 7.84614086151123 C 8.41909122467041 8.319378852844238 8.427764892578125 9.078641891479492 8.054835319519043 9.56748104095459 L 1.784423112869263 17.10289573669434 C 1.580613017082214 17.34731292724609 1.311756730079651 17.46692657470703 1.047237157821655 17.46692657470703 C 0.782717764377594 17.46692657470703 0.5138614773750305 17.34731292724609 0.3100520968437195 17.10289573669434 C -0.09756739437580109 16.61405563354492 -0.09756739437580109 15.8235912322998 0.3100520968437195 15.33995246887207 L 5.817260265350342 8.73021411895752 Z">
-			</path>
-		</svg>
-		<svg class="go2" viewBox="0 0 8.328 17.467">
-			<path id="go2" d="M 5.817260265350342 8.73021411895752 L 0.3057161569595337 2.125673294067383 C -0.1019041240215302 1.636833667755127 -0.1019041240215302 0.8463690280914307 0.3057161569595337 0.3627298772335052 C 0.7133349180221558 -0.12090964615345 1.372466921806335 -0.12090964615345 1.780086398124695 0.3627298772335052 L 8.024479866027832 7.84614086151123 C 8.41909122467041 8.319378852844238 8.427764892578125 9.078641891479492 8.054835319519043 9.56748104095459 L 1.784423112869263 17.10289573669434 C 1.580613017082214 17.34731292724609 1.311756730079651 17.46692657470703 1.047237157821655 17.46692657470703 C 0.782717764377594 17.46692657470703 0.5138614773750305 17.34731292724609 0.3100520968437195 17.10289573669434 C -0.09756739437580109 16.61405563354492 -0.09756739437580109 15.8235912322998 0.3100520968437195 15.33995246887207 L 5.817260265350342 8.73021411895752 Z">
-			</path>
-		</svg>
-	</div>
+
+<button onclick="location.href='/main/logout/'">
+	<svg class="scrap">
+		<rect id="scrap" rx="17" ry="17" x="0" y="0" width="240" height="34">
+			<div id="_ce">
+				<span><b>로그아웃</b></span>
+			</div>
+		</rect>
+	</svg> {% endcomment %}
+
+	{% comment %}  버튼 화살표 {% endcomment %}
 </button>
 <!--달력 시작-->
 	<div class="calendar">
@@ -361,13 +399,13 @@
 
 	<!--티켓 내부 이미지 추가 시작-->
 	<!-- <button onclick="defaultBtnActive()" id="custom-btn"> -->
-	<label for="default-btn">
+	{% comment %} <label for="default-btn">
 
 		<img class="img_upload" src="{%static 'plus.PNG'%}" alt="">
 
-	</label>
+	</label> {% endcomment %}
 	<!-- </button> -->
-	<input id="default-btn" type="file" hidden>
+	{% comment %} <input id="default-btn" type="file" hidden> {% endcomment %}
 	<!--이미지 올리는 기능 -->
 	<!-- <script>
 		 const defaultBtn = document.querySelector("#default-btn");
