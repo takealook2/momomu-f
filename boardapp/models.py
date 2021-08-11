@@ -10,15 +10,15 @@ category_select = (
 )
 
 class Board(models.Model):
+    id = models.AutoField(primary_key=True, null=False, blank=False)
     category = models.CharField(max_length=20, choices=category_select, default='잡담')
     title = models.CharField(max_length=50)
-    writer = models.CharField(max_length=50)
+    writer = models.ForeignKey('mainapp.BoardMember', on_delete=models.CASCADE)
     pub_date = models.DateTimeField()
     body = models.TextField()
     image = models.ImageField(upload_to = "board/", blank=True, null=True)
-    #->오류나면 "board/"이부분 수정해보기 ->boardapp/으로??
     board_hit = models.PositiveIntegerField(default=0)
-    #->조회수 기능
+    
 
     def __str__(self):
         return self.title #제목으로 보이게
@@ -32,10 +32,15 @@ class Board(models.Model):
         self.board_hit = self.board_hit + 1
         self.save()
 
+    #댓글 수 세는 것
+    @property
+    def number_of_comments(self):
+        return Comment.objects.filter(post=self).count()
+
 #댓글 관련 모델
 class Comment(models.Model):
     post = models.ForeignKey(Board, related_name='comments', on_delete=models.CASCADE)
-    author_name=models.CharField(max_length=20) 
+    author_name=models.ForeignKey('mainapp.BoardMember', on_delete=models.CASCADE)
     comment_text=models.TextField() 
     created_at=models.DateTimeField(default=timezone.now) #장고에서 기본으로 제공됨 
     # 들어갈 내용들 : 댓글 작성자, 댓글 내용, 댓글 작성 시간

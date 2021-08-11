@@ -6,11 +6,10 @@ from django import forms
 class BoardForm(forms.ModelForm):
     class Meta:
         model = Board
-        fields = ['category', 'title', 'writer', 'image', 'body']
+        fields = ['category', 'title', 'image', 'body']
         labels = {
             'category' : '카테고리', 
             'title' : '제목', 
-            'writer' : '작성자',
             'image' : '이미지', 
             'body' : ''
             }
@@ -19,10 +18,10 @@ class BoardForm(forms.ModelForm):
 class CommentForm(forms.ModelForm):
     class Meta:
         model = Comment
-        fields = ['author_name', 'comment_text']
+        fields = ['comment_text']
         labels={
             'author_name' : '작성자',
-            'comment_text' : ''
+            'comment_text' : '',
         }
 
 # 검색기능폼

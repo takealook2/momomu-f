@@ -782,7 +782,6 @@ hr:not([size]) {
 </div> 
 <div class="container">
 {% block content %}
-
 {% comment %} 조회수 카운팅 - 'none'이라고 떠서 안보이게 숨겨둠{% endcomment %}
 <div class= "class" name="name" id="id" style="display:none">
 {{board.update_counter}}</div> 
@@ -802,9 +801,20 @@ hr:not([size]) {
     </div>
   </div><br>
 
+{% if messages %}
+  <ul class="absoulte top-0 right-0 left-0 flex justify-center">
+      {% for message in messages %}
+      <li class="z-20 message py-3 px-5 text-white rounded-lg font-bold text-lg {% if message.tags %} {{ message.tags }}{% endif %}">{{ message }}</li>
+      {% endfor %}
+  </ul>
+{% endif %}
+
+	{% if request.session.user %}
     <button type="submit" class="btn btn-secondary" onclick="location.href='{% url 'edit' board.id%}'">수정하기</button>
     <button type="submit" class="btn btn-secondary" onclick="location.href='{% url 'delete' board.id%}'">삭제하기</button>
     <hr>
+	{% endif %}
+
 	<div class="comment_main">
     <strong>&nbsp;&nbsp;&nbsp;댓글</strong><hr></div>
     {% for comment in board.comments.all %} 
@@ -818,9 +828,10 @@ hr:not([size]) {
     {% endfor %}
 
     <hr>
+	{% if request.session.user %}
     <a class="btn btn-success" href="{% url 'comment' board.id%}">댓글쓰기</a>
 	<button type="submit" class="btn btn-secondary" onclick="location.href='{%url 'board'%}'">글 목록</button>
-
+	{% endif %}
 {% endblock %}
 
 </div>
