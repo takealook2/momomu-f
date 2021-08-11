@@ -168,7 +168,7 @@ def home(request):
                 request.session['username'] = member.username
                 request.session['nickname'] = member.nickname
                 request.session['email'] = member.email
-                return render(request, "first.html")
+                return render(request, "first.html", {'img1':img1, 'img2':img2, 'img3':img3, 'img4':img4, 'img5':img5, 'title1':title1})
 
             else:
                 res_data['error'] = '비밀번호가 일치하지 않습니다.'
