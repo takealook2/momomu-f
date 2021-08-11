@@ -59,8 +59,11 @@ def new(request):
 def create(request):
     form = BoardForm(request.POST, request.FILES)
     if form.is_valid():
+        user_id = request.session.get('user')
+        member = BoardMember.objects.get(pk=user_id)
         new_board = form.save(commit=False) #임시저장(pubdate)
         new_board.pub_date = timezone.now()
+        new_board.writer = member
         new_board.save()
         return redirect('detail', new_board.id)
     return redirect('board')
@@ -68,14 +71,18 @@ def create(request):
 # 수정기능 edit.html 보여줌
 def edit(request, id):
     edit_board = Board.objects.get(id=id)
+    user_id = request.session.get('user')
+    member = BoardMember.objects.get(pk=user_id)
+    if member != edit_board.writer:
+        messages.warning(request, "수정 권한이 없습니다") 
+        return redirect('detail', edit_board.id)
+    
     return render(request, 'edit.html', {'board':edit_board})
-
 
 # 수정 내용을 데이터베이스에 저장
 def update(request, id):
     update_board = Board.objects.get(id = id)
     update_board.title = request.POST['title']
-    update_board.writer = request.POST['writer']
     update_board.body = request.POST['body']
     update_board.pub_date = timezone.now()
     update_board.save() # 필수!
@@ -84,6 +91,14 @@ def update(request, id):
 # 삭제하기 기능
 def delete(request, id):
     delete_board = Board.objects.get(id=id)
+
+    # 글쓴이가 아닌 경우 삭제 안됨 -> 경고창 뜨도록 수정하기
+    user_id = request.session.get('user')
+    member = BoardMember.objects.get(pk=user_id)
+    if member != delete_board.writer:
+        messages.warning(request, "삭제 권한이 없습니다")
+        return redirect('detail', delete_board.id)
+
     delete_board.delete()
     return redirect('board')
 
@@ -91,9 +106,12 @@ def delete(request, id):
 def comment(request, id): 
     board = get_object_or_404(Board, pk = id)
     form = CommentForm(request.POST)
+    user_id = request.session.get('user')
+    member = BoardMember.objects.get(pk=user_id)
     if form.is_valid():
         comment = form.save(commit=False)
         comment.post = board
+        comment.author_name = member
         comment.save()
         return redirect('detail', board.id)
     else:
@@ -104,24 +122,24 @@ def comment(request, id):
 #카테고리(잡담)
 def category_talk(request):
     boards = Board.objects.all().filter(category='잡담').order_by('-id')
-    paginator = Paginator(boards, 5)
-    page = request.GET.get('page')
+    paginator = Paginator(boards, '8')
+    page = request.GET.get('page','1')
     boards = paginator.get_page(page)
     return render(request, 'board.html', {'boards':boards})
 
 #카테고리(후기)
 def category_review(request):
     boards = Board.objects.all().filter(category='후기').order_by('-id')
-    paginator = Paginator(boards, 5)
-    page = request.GET.get('page')
+    paginator = Paginator(boards, '8')
+    page = request.GET.get('page','1')
     boards = paginator.get_page(page)
     return render(request, 'board.html', {'boards':boards})
 
 #카테고리(공지)
 def category_notice(request):
     boards = Board.objects.all().filter(category='공지').order_by('-id')
-    paginator = Paginator(boards, 5)
-    page = request.GET.get('page')
+    paginator = Paginator(boards, '8')
+    page = request.GET.get('page','1')
     boards = paginator.get_page(page)
     return render(request, 'board.html', {'boards':boards})
 
@@ -148,8 +166,8 @@ def mypage(request):
 def mypage(request):
     me = request.session.get('user')
     boards = Board.objects.all().filter(writer = me).order_by('-id')
-    paginator = Paginator(boards, 5)
-    page = request.GET.get('page')
+    paginator = Paginator(boards, '8')
+    page = request.GET.get('page','1')
     boards = paginator.get_page(page)
     return render(request, 'mypage.html', {'boards':boards})
     

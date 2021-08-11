@@ -12,9 +12,6 @@ class BoardMember(models.Model):
     updated_at  = models.DateTimeField(auto_now=True, verbose_name='마지막수정일')
 
     def __str__(self):
-        return self.email
-
-    def __str__(self):
         return self.nickname
 
     class Meta:

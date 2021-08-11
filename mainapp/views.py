@@ -43,7 +43,9 @@ def home(request):
 
             if check_password(password, member.password):
                 request.session['user'] = member.id
+                request.session['username'] = member.username
                 request.session['nickname'] = member.nickname
+                request.session['email'] = member.email
                 return render(request, "first.html")
 
             else:
