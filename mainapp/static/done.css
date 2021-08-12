@@ -282,6 +282,7 @@
     font-size: 28px;
     color: rgba(59,58,58,1);
 }
+
 #______ {
     left: 833px;
     top: 678px;
@@ -298,6 +299,38 @@
     font-size: 21px;
     color: rgba(59,58,58,1);
 }
+#error_title {
+    left: 790px;
+    top: 571px;
+    position: absolute;
+    overflow: visible;
+    width: 218px;
+    white-space: nowrap;
+    text-align: center;
+    font-family: HSBombaram3_Regular;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 28px;
+    color: rgba(59,58,58,1);
+}
+
+#error_content {
+    left: 810px;
+    top: 678px;
+    position: absolute;
+    overflow: visible;
+    width: 299px;
+    white-space: nowrap;
+    line-height: 47px;
+    margin-top: -13px;
+    text-align: center;
+    font-family: MaruBuri-Regular;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 21px;
+    color: rgba(59,58,58,1);
+}
+
 #_42 {
     fill: transparent;
     stroke: rgba(71,71,71,1);

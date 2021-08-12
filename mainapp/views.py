@@ -160,20 +160,27 @@ def home(request):
             res_data['error'] = '모든 값을 입력하세요!'
 
         else:
-            member = BoardMember.objects.get(email=email)
-            #print(member.id)
+            try: 
+                member = BoardMember.objects.get(email=email)
+                #print(member.id)
 
-            if check_password(password, member.password):
-                request.session['user'] = member.id
-                request.session['username'] = member.username
-                request.session['nickname'] = member.nickname
-                request.session['email'] = member.email
-                return render(request, "first.html", {'img1':img1, 'img2':img2, 'img3':img3, 'img4':img4, 'img5':img5, 'title1':title1})
+                if check_password(password, member.password):
+                    request.session['user'] = member.id
+                    request.session['username'] = member.username
+                    request.session['nickname'] = member.nickname
+                    request.session['email'] = member.email
+                    return render(request, "first.html", {'img1':img1, 'img2':img2, 'img3':img3, 'img4':img4, 'img5':img5, 'title1':title1})
 
-            else:
-                res_data['error'] = '비밀번호가 일치하지 않습니다.'
+                else:
+                    res_data['error'] = '비밀번호가 일치하지 않습니다.'    
+                    return render(request, "error.html")
+
+            except BoardMember.DoesNotExist:
+                res_data['error'] = "존재하지 않는 아이디입니다."
+                return render(request, "error.html")
 
         return render(request, 'home.html', res_data)
+
 
 #로그아웃 함수
 def logout(request):
