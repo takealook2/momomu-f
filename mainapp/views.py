@@ -243,3 +243,4 @@ def musical(request):
     'date1':date1, 'date2':date2, 'date3':date3, 'date4':date4, 'date5':date5, 'date6':date6, 'date7':date7, 'date8':date8, 'date9':date9, 'date10':date10,
     'img1':img1, 'img2':img2, 'img3':img3, 'img4':img4, 'img5':img5, 'img6':img6, 'img7':img7, 'img8':img8, 'img9':img9, 'img10':img10})
 
+#업데이트를 위함.
